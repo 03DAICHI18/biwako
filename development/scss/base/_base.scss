@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* base */
+/************************************************/
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+	html {
+		font-size: .625vw;
+	}
+}
+
+body {
+	color: $base-color;
+	font-family: $fontFamily;
+	overflow-x: hidden;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: bottom;
+}
