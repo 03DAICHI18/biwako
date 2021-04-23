@@ -1,6 +1,4 @@
 // フォファミリー設定
-
-// （下記は遊ゴシックを採用した場合） ////////////////////
 $fontFamily: -apple-system,
 BlinkMacSystemFont,
 Roboto,
@@ -15,7 +13,7 @@ Meiryo,
 sans-serif;
 
 //  太字：セクションタイトルなど（WinではSegoe UI semiboldを適用。Yu Gothic Medium→Yu Gothic） ////////////////////
-$fontFamily-bold: -apple-system,
+$fontFamily_bold: -apple-system,
 BlinkMacSystemFont,
 Roboto,
 "Segoe UI semibold",
