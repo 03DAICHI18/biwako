@@ -19,6 +19,8 @@
 @import "layout/layout";
 
 // blockmodule：使い回すコンポーネント  （bl_）
+@import "module/section_title";
+@import "module/nav";
 
 // unipue：使いまわされないスタイル  （un_）
 @import "unipue/top";

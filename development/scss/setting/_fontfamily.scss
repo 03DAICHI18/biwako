@@ -1,11 +1,5 @@
 // フォファミリー設定
-$fontFamily: -apple-system,
-BlinkMacSystemFont,
-Roboto,
-"Segoe UI",
-"Helvetica Neue",
-HelveticaNeue,
-YuGothic,
+$fontFamily: YuGothic,
 "Yu Gothic Medium",
 "Yu Gothic",
 Verdana,
@@ -13,13 +7,7 @@ Meiryo,
 sans-serif;
 
 //  太字：セクションタイトルなど（WinではSegoe UI semiboldを適用。Yu Gothic Medium→Yu Gothic） ////////////////////
-$fontFamily_bold: -apple-system,
-BlinkMacSystemFont,
-Roboto,
-"Segoe UI semibold",
-"Helvetica Neue",
-HelveticaNeue,
-YuGothic,
+$fontFamily_bold: YuGothic,
 "Yu Gothic",
 "Segoe UI",
 Verdana,
