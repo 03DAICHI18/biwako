@@ -21,9 +21,10 @@
 // blockmodule：使い回すコンポーネント  （bl_）
 @import "module/section_title";
 @import "module/nav";
+@import "module/slide";
 
 // unipue：使いまわされないスタイル  （un_）
-@import "unipue/top";
+@import "unipue/unique";
 
 // helper：補助スタイル  （hp_）
 @import "helper/helper";

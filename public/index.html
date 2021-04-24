@@ -3,7 +3,7 @@
 <html lang="ja" prefix="og: http://ogp.me/ns#">
 <head>
   <!-- タイトルタグ ※35文字程度  -->
-  <title>HareHare Official Site</title>
+  <title>びわこレイクサイドBBQ</title>
 
   <!-- 共通 -->
   <meta charset="UTF-8">
@@ -34,7 +34,9 @@
 
   <!-- 外部ファイル読み込み -->
   <link rel="stylesheet" href="assets/css/reseter.css">
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
   <div>
@@ -54,7 +56,12 @@
       </nav>
     </header>
     <div class="ly_fv">
-      <div class="el_fvImg"><img src="" alt=""></div>
+      <picture>
+        <source media="(min-width: 961px)" srcset="./assets/img/logo/fv.png">
+        <source media="(max-width: 960px)" srcset="./assets/img/txt_bg/fv_sp.png">
+        <img src="./assets/img/logo/fv.png" alt="鼻炎・花粉・ウィルス対策の新常識シュッと1秒「鼻バリア」">
+      </picture>
+      <!-- <div class="el_fvImg"><img src="" alt=""></div>
       <div class="el_fvText">
         <img src="" alt="水と暮らし、水と遊び、水と憩う">
         <img src="" alt="なぎさ公園サンシャインビーチ">
@@ -62,33 +69,71 @@
         <img src="" alt="土日祝のみ営業（2021年5月8日〜2021年10月31日まで）1組3,000円〜webかtelにて簡単予約">
         <p class="el_fv_contact">空き状況と予約はこちら</p>
       </div>
-      <div class="el_fvImg"><img src="" alt=""></div>
+      <div class="el_fvImg"><img src="" alt=""></div> -->
     </div>
   </div>
   <main>
-    <section>
+    <section class="ly_concept hp_Bg">
       <h2 id="concept" class="el_section_title el_section_concept">コンセプト</h2>
+      <div class="un_concept_textWrap">
+        <p>湖の都、大津。</p>
+        <p>水と暮らし、水と遊び、水と憩う。</p>
+        <p>
+          大津湖岸なぎさ公園
+          琵琶湖沿いに湖の景観を存分に感じる事のできる緑豊かな公園。
+        </p>
+        <p>
+          広い芝生も開放的でつい背伸びをしたくなるような
+          気持ちも晴れやかになる空間。
+        </p>
+        <p>
+          バーベキューやアクティビティを通して、湖と自然の景観が自慢の
+          ここでしか味わう事のできないアウトドアライフが楽しめます。
+        </p>
+        <p>
+          大人気のSUPや日本ではなかなかできない足漕ぎSUP、
+          更に昨今世界的に流行ってきている、
+          テントサウナで”ととのう”事もオススメ
+        </p>
+        <p>
+          美しい大自然と共にゆったりとくつろぎながら満喫し、身も心もリフレッシュ。
+          そんなかけがえのない体験を、大切な人達と心を豊かに広げていく。
+        </p>
+      </div>
+      <span class="un_concept_bottomBg"></span>
     </section>
     <section>
       <h2 id="service" class="el_section_title el_section_service">サービス</h2>
+      <p>びわこレイクサイドBBQは、開放的なアウトドアライフが楽しめる、<br>湖と自然の景観が自慢のバーベキュー場です。</p>
+      <div>
+        <div class="bl_slide_container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="js_slide_item swiper-slide"><img src="./assets/img/photo/slide_img.jpg" alt=""></div>
+            <div class="js_slide_item swiper-slide"><img src="./assets/img/photo/slide_img.jpg" alt=""></div>
+            <div class="js_slide_item swiper-slide"><img src="./assets/img/photo/slide_img.jpg" alt=""></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
     </section>
-    <section>
+    <section class="hp_subBg">
       <h2 id="plan" class="el_section_title el_section_plan">プラン</h2>
     </section>
-    <section>
+    <section class="hp_Bg">
       <h2 id="activety" class="el_section_title el_section_activety">アクティビティ</h2>
     </section>
     <section>
       <h2 id="information" class="el_section_title el_section_information">施設情報</h2>
     </section>
-    <section>
+    <section class="hp_Bg">
       <h2 id="faq" class="el_section_title el_section_faq">よくある質問</h2>
     </section>
     <section>
       <h2 id="contact" class="el_section_title el_section_contact">コンタクト</h2>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer hp_fotterBg">
     <div class="ly_footer_wrapper">
       <ul>
         <li><a href="#concept">Concept</a></li>
@@ -106,10 +151,35 @@
       </ul>
     </div>
     <div class="el_footer_copy">
-      <small>&copy; びわこレイクサイドBBQ</small>
+      <small>&copy; びわこレイクサイドBBQ</small>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="assets/js/plugin/swiper.min.js"></script>
   <script src="assets/js/common.js"></script>
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 20,
+      // 自動スライド
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      // ブレイクポイント
+      breakpoints: {
+        780: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+          centeredSlides: true,
+        },
+      }
+    })
+  </script>
 </body>
 </html>

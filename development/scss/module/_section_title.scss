@@ -1,6 +1,9 @@
+/* 共通モジュールのスタイル */
+/************************************************/
 .el_section_title {
 	@include l_height(17 , 27);
 	position: relative;
+	text-align: center;
 }
 
 .el_section_title::after {

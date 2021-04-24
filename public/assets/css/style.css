@@ -5,6 +5,7 @@ body {
   color: #000;
   font-family: YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
   font-size: 1.25rem;
+  font-weight: 500;
   overflow-x: hidden;
 }
 
@@ -16,10 +17,18 @@ img {
 
 /* layoutModule */
 /************************************************/
+.ly_concept {
+  padding-top: 90px;
+  position: relative;
+}
+
+/* 共通モジュールのスタイル */
+/************************************************/
 .el_section_title {
   font-size: 1.0625rem;
   line-height: 1.58824;
   position: relative;
+  text-align: center;
 }
 
 .el_section_title::after {
@@ -64,8 +73,35 @@ img {
   display: block;
 }
 
-/* トップページ独自のスタイル */
+/*slick setting*/
+.bl_slide_container {
+  max-width: 1130px;
+}
+
+@media screen and (max-width: 1100px) {
+  .bl_slide_container {
+    padding: 0 20px;
+  }
+}
+
+/* セクション独自のスタイル */
 /************************************************/
+.un_concept_textWrap {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.un_concept_bottomBg {
+  background-image: url(../../../public/assets/img/symbol/concept/bg_green.png);
+  background-size: cover;
+  display: block;
+  height: 135.38px;
+}
+
 /* helperスタイル */
 /************************************************/
 .hp_mt0 {
@@ -194,6 +230,18 @@ img {
 
 .hp_mb150 {
   margin-bottom: 150px !important;
+}
+
+.hp_Bg {
+  background-color: #70a24d;
+}
+
+.hp_subBg {
+  background-color: #c5d02c;
+}
+
+.hp_fotterBg {
+  background-color: #70a24d;
 }
 
 /* js対応スタイル */
