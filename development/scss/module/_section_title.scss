@@ -2,7 +2,7 @@
 /************************************************/
 .el_section_title {
 	color: $accent_color;
-	@include l_height(17 , 27);
+	@include l_height(18 , 27);
 	position: relative;
 	text-align: center;
 }
@@ -15,8 +15,15 @@
 	text-transform: capitalize;
 }
 
+.el_section_concept {
+	padding-top: 75px;
+}
 .el_section_concept::after {
 	content: "concept";
+}
+
+.el_section_service {
+	margin-top: 86px;
 }
 .el_section_service::after {
 	content: "service";

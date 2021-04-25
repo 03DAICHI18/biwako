@@ -5,7 +5,7 @@ body {
   color: #000;
   font-family: YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 400;
   overflow-x: hidden;
 }
 
@@ -18,16 +18,46 @@ img {
 /* layoutModule */
 /************************************************/
 .ly_concept {
-  padding-top: 90px;
   position: relative;
+}
+
+.ly_fv {
+  height: 812.5px;
+}
+
+.ly_fv img {
+  height: 100%;
+}
+
+.ly_concept {
+  position: relative;
+}
+
+.ly_concept_inner {
+  margin: 0 auto;
+  max-width: 1162px;
+  position: relative;
+}
+
+.ly_concept_treeLeft, .ly_concept_treeRight {
+  position: absolute;
+  top: 118px;
+}
+
+.ly_concept_treeLeft {
+  left: 0;
+}
+
+.ly_concept_treeRight {
+  right: 0;
 }
 
 /* 共通モジュールのスタイル */
 /************************************************/
 .el_section_title {
   color: #406150;
-  font-size: 1.0625rem;
-  line-height: 1.58824;
+  font-size: 1.125rem;
+  line-height: 1.5;
   position: relative;
   text-align: center;
 }
@@ -40,8 +70,16 @@ img {
   text-transform: capitalize;
 }
 
+.el_section_concept {
+  padding-top: 75px;
+}
+
 .el_section_concept::after {
   content: "concept";
+}
+
+.el_section_service {
+  margin-top: 86px;
 }
 
 .el_section_service::after {
@@ -220,11 +258,8 @@ img {
 
 .ly_header {
   height: 70px;
-  left: 50%;
   position: absolute;
   top: 0;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   width: 100%;
 }
 
@@ -235,6 +270,7 @@ img {
   margin: 0 auto;
   max-width: 1330px;
   padding: 30px 0;
+  width: 100%;
 }
 
 .bl_header_block {
@@ -269,13 +305,22 @@ img {
 
 /* セクション独自のスタイル */
 /************************************************/
+/* concept */
+.un_concept_textWrap {
+  color: #fff;
+}
+
 .un_concept_textWrap {
   font-size: 1.25rem;
   line-height: 1.5;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 80px;
   max-width: 800px;
   text-align: center;
+}
+
+.un_concept_textBlock:not(:first-of-type) {
+  margin-top: 1.5em;
 }
 
 .un_concept_bottomBg {
@@ -283,6 +328,14 @@ img {
   background-size: cover;
   display: block;
   height: 135.38px;
+  margin-top: 2.2em;
+}
+
+/* service */
+.un_service_text {
+  color: #70a24d;
+  margin-top: 65px;
+  text-align: center;
 }
 
 /* helperスタイル */

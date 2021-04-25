@@ -1,6 +1,33 @@
 /* layoutModule */
 /************************************************/
 .ly_concept {
-	padding-top: 90px;
 	position: relative;
+}
+
+.ly_fv {
+	height: 812.5px;
+	img {
+		height: 100%;
+	}
+}
+
+.ly_concept {
+	position: relative;
+}
+
+.ly_concept_inner {
+	margin: 0 auto;
+	max-width: 1162px;
+	position: relative;
+}
+.ly_concept_treeLeft , .ly_concept_treeRight {
+	position: absolute;
+	top: 118px;
+}
+
+.ly_concept_treeLeft {
+	left: 0;
+}
+.ly_concept_treeRight {
+	right: 0;
 }

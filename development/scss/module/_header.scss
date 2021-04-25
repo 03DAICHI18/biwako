@@ -1,9 +1,7 @@
 .ly_header {
 	height: 70px;
-	left: 50%;
 	position: absolute;
 	top: 0;
-	transform: translateX(-50%);
 	width: 100%;
 }
 
@@ -14,6 +12,7 @@
 	margin: 0 auto;
 	max-width: 1330px;
 	padding: 30px 0;
+	width: 100%;
 }
 
 .bl_header_block {

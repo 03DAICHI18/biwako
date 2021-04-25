@@ -1,19 +1,32 @@
 /* セクション独自のスタイル */
 /************************************************/
+/* concept */
+.un_concept_textWrap {
+	color: $sub_color;
+}
+
 .un_concept_textWrap {
 	@include l_height(20 , 30);
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 80px;
 	max-width: 800px;
 	text-align: center;
 }
+.un_concept_textBlock:not(:first-of-type) {
+	margin-top: 1.5em;
+}
 
-// ボトム背景
 .un_concept_bottomBg {
 	background-image: url(../../../public/assets/img/symbol/concept/bg_green.png);
 	background-size: cover;
 	display: block;
 	height: 135.38px;
-	// bottom: 0;
-	// position: absolute;
+	margin-top: 2.2em;
+}
+
+/* service */
+.un_service_text {
+	color: $accentSub_color;
+	margin-top: 65px;
+	text-align: center;
 }
