@@ -58,11 +58,7 @@
   </header> <!-- header -->
 
   <div class="ly_fv">
-    <picture>
-      <source media="(min-width: 961px)" srcset="./assets/img/logo/fv.png">
-      <source media="(max-width: 960px)" srcset="./assets/img/logo/fv.png">
-      <img src="./assets/img/logo/fv.png" alt="">
-    </picture>
+    <!-- 現在はbackground-imageで画像配置しているだけ -->
     <!-- <div class="el_fvImg"><img src="" alt=""></div>
       <div class="el_fvText">
         <img src="" alt="水と暮らし、水と遊び、水と憩う">
@@ -152,30 +148,36 @@
         </div>
       </div>
 
-      <h3><img src="./assets/img/logo/point.svg" alt="気になる！3つのポイント"></h3>
-      <div class="bl_un_point_contaier">
-        <ul>
-          <li>
+      <h3 class="el_section_subTitle"><img src="./assets/img/logo/point.svg" alt="気になる！3つのポイント"></h3>
+      <div class="un_point_contaier">
+        <ul class="un_point_block">
+          <li class="un_point_list">
             <div><img src="./assets/img/symbol/service/point_01.png" alt=""></div>
-            <h4>予約がカンタン</h4>
-            <p>WEBのみで予約完結可能</p>
-            <p>(電話予約は承っておりません)</p>
-            <p><a href="">予約はこちら</a></p>
+            <div class="un_point_aboutWrap">
+              <h4 class="el_accent_head un_point_head hp_bg_supportColor">予約がカンタン</h4>
+              <p class="un_point_text">WEBのみで予約完結可能<br>
+                (電話予約は承っておりません)</p>
+              <p class="el_accent_head un_point_sub hp_bg_subColor"><a href="">予約はこちら</a></p>
+            </div>
           </li>
-          <li>
+          <li class="un_point_list">
             <div><img src="./assets/img/symbol/service/point_02.png" alt=""></div>
-            <h4>アクティビティが充実</h4>
-            <p>WEBのみで予約完結可能(電話予約は承っておりません)</p>
-            <p><a href="">予約はこちら</a></p>
+            <div class="un_point_aboutWrap">
+              <h4 class="el_accent_head un_point_head hp_bg_supportColor">アクティビティが充実</h4>
+              <p class="un_point_text">琵琶湖でのマリンスポーツや<br>アクティビティをご用意</p>
+              <p class="el_accent_head un_point_sub"><a href="">詳しくみる</a></p>
+            </div>
           </li>
-          <li>
+          <li class="un_point_list">
             <div><img src="./assets/img/symbol/service/point_03.png" alt=""></div>
-            <h4>充実した設備</h4>
-            <ul>
-              <li>・駐車場 / トイレ / 自販機あり</li>
-              <li>・水道 / 炊事場あり</li>
-              <li>・コンビニとスーパーが近い</li>
-            </ul>
+            <div class="un_point_aboutWrap">
+              <h4 class="el_accent_head un_point_head hp_bg_supportColor">充実した設備</h4>
+              <ul class="un_point_text">
+                <li>・駐車場 / トイレ / 自販機あり</li>
+                <li>・水道 / 炊事場あり</li>
+                <li>・コンビニとスーパーが近い</li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
@@ -186,7 +188,7 @@
       <p class="un_plan_read">食材と飲み物以外のBBQに必要な機材が全てセットになったVIPプランと、<br>必要な物だけ単品レンタルできるSIMPLEプランの２種類をご用意。
       </p>
       <div class="bl_strongContainer">
-        <div class="bl_strongBox">
+        <div class="bl_strongBox hp_flex_column">
           <div class="el_strongBox_ttlblock">
             <p>食材のみ準備すれば手ぶらでOK</p>
             <h3>①全部おまかせ VIPプラン</h3>
@@ -222,7 +224,7 @@
           </div>
         </div>
 
-        <div class="bl_strongBox">
+        <div class="bl_strongBox hp_flex_column">
           <div class="el_strongBox_ttlblock">
             <p>必要な物は単品レンタル可能</p>
             <h3>②お手頃 SIMPLEプラン</h3>
@@ -251,13 +253,13 @@
             <p class="el_linkBtn"><a href="">機材詳細を見る</a></p>
           </div>
         </div>
-        <p class="el_linkBtn"><a href="">空き状況と予約はこちら</a></p>
-        <ul>
-          <li>※1組10人まで(3歳以下は人数に含みません) ※10名以上での利用の場合は分けてご予約下さい。</li>
-          <li>※人数分の備品をご用意致します。 ※GW期間利用料金とは異なるのでご注意下さい。</li>
-          <li>※指定分別されてないゴミは回収できません。</li>
-        </ul>
       </div>
+      <p class="el_linkBtn"><a href="">空き状況と予約はこちら</a></p>
+      <ul>
+        <li>※1組10人まで(3歳以下は人数に含みません) ※10名以上での利用の場合は分けてご予約下さい。</li>
+        <li>※人数分の備品をご用意致します。 ※GW期間利用料金とは異なるのでご注意下さい。</li>
+        <li>※指定分別されてないゴミは回収できません。</li>
+      </ul>
     </section> <!-- plan -->
 
     <section id="activety" class="hp_Bg">
@@ -530,7 +532,7 @@
 
   </main> <!-- main -->
 
-  <footer class="footer hp_fotterBg">
+  <footer class="footer hp_Bg">
     <div class="ly_footer_wrapper">
       <ul>
         <li><a href="#concept">Concept</a></li>

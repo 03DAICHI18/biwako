@@ -22,11 +22,9 @@ img {
 }
 
 .ly_fv {
+  background-image: url(../../../public/assets/img/logo/fv.png);
+  background-size: cover;
   height: 812.5px;
-}
-
-.ly_fv img {
-  height: 100%;
 }
 
 .ly_concept {
@@ -65,10 +63,8 @@ img {
 .el_section_title::after {
   display: block;
   font-size: 2.8125rem;
-  font-size: 2.8125rem;
   font-weight: 700;
-  line-height: 0;
-  padding-top: 17px;
+  line-height: 1;
   text-transform: capitalize;
 }
 
@@ -78,10 +74,6 @@ img {
 
 .el_section_concept::after {
   content: "concept";
-}
-
-.el_section_service {
-  margin-top: 86px;
 }
 
 .el_section_service::after {
@@ -107,6 +99,24 @@ img {
 
 .el_section_contact::after {
   content: "contact";
+}
+
+.el_section_service {
+  margin: 0 auto;
+  margin-top: 80px;
+  max-width: 1250px;
+}
+
+.el_section_service::before {
+  content: url(../../../public/assets/img/symbol/service/humans.svg);
+  position: absolute;
+  right: -30px;
+  top: -30px;
+}
+
+.el_section_subTitle {
+  margin-top: 80px;
+  text-align: center;
 }
 
 .el_nav_link {
@@ -260,7 +270,6 @@ img {
 }
 
 .ly_header {
-  height: 70px;
   position: absolute;
   top: 0;
   width: 100%;
@@ -272,7 +281,7 @@ img {
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1330px;
-  padding: 30px 0;
+  padding: 25px 0;
   width: 100%;
 }
 
@@ -362,6 +371,26 @@ img {
   font-weight: 600;
 }
 
+.bl_strongContainer {
+  display: flex;
+}
+
+.el_accent_head {
+  background-color: #406150;
+  border-radius: 38px;
+  color: #fff;
+  display: inline-block;
+  height: 38px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  line-height: 38px;
+  text-align: center;
+}
+
+.el_accent_head a {
+  color: #fff;
+}
+
 /* セクション独自のスタイル */
 /************************************************/
 /* concept */
@@ -373,7 +402,7 @@ img {
   font-size: 1.25rem;
   line-height: 1.5;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 50px;
   max-width: 800px;
   text-align: center;
 }
@@ -387,14 +416,105 @@ img {
   background-size: cover;
   display: block;
   height: 135.38px;
-  margin-top: 2.2em;
+  margin-top: 2.5em;
 }
 
 /* service */
 .un_service_text {
   color: #70a24d;
-  margin-top: 65px;
+  margin-top: 38px;
   text-align: center;
+}
+
+.un_point_contaier {
+  margin-top: -17px;
+  padding-bottom: 80px;
+}
+
+.un_point_block {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1250px;
+}
+
+.un_point_list {
+  flex-shrink: 0;
+}
+
+.un_point_list a {
+  display: block;
+}
+
+.un_point_list:first-of-type {
+  margin-left: 25px;
+  width: 390px;
+}
+
+.un_point_list:first-of-type .un_point_aboutWrap {
+  margin-left: 15px;
+}
+
+.un_point_list:first-of-type .un_point_sub::after {
+  content: "▶︎";
+  left: 9.3em;
+  position: absolute;
+  top: 0;
+}
+
+.un_point_list:nth-of-type(2) {
+  margin-left: 30px;
+  width: 378px;
+}
+
+.un_point_list:nth-of-type(2) .un_point_sub {
+  background-color: #fff;
+  border: 2px solid #70a24d;
+  line-height: 34px;
+}
+
+.un_point_list:nth-of-type(2) .un_point_sub a {
+  color: #70a24d;
+}
+
+.un_point_list:nth-of-type(2) .un_point_sub::after {
+  color: #70a24d;
+  content: "▼";
+  left: 8.6em;
+  position: absolute;
+  top: 0;
+}
+
+.un_point_list:last-of-type {
+  margin-left: 15px;
+  width: 413px;
+}
+
+.un_point_list:last-of-type .un_point_aboutWrap {
+  margin-left: -35px;
+}
+
+.un_point_aboutWrap {
+  text-align: center;
+  width: 100%;
+}
+
+.un_point_aboutWrap .un_point_head {
+  height: 52px;
+  font-size: 1.6875rem;
+  line-height: 0.15;
+  line-height: 52px;
+  padding: 0 1.2em;
+}
+
+.un_point_aboutWrap .un_point_sub {
+  margin-top: 10px;
+  position: relative;
+  width: 242px;
+}
+
+.un_point_text {
+  margin-top: 12px;
 }
 
 /* helperスタイル */
@@ -535,12 +655,24 @@ img {
   background-color: #c5d02c;
 }
 
-.hp_fotterBg {
+.hp_textw {
+  color: #fff;
+}
+
+.hp_flex_column {
+  flex-direction: column;
+}
+
+.hp_bg_supportColor {
+  background-color: #c5d02c;
+}
+
+.hp_bg_subColor {
   background-color: #70a24d;
 }
 
-.hp_textw {
-  color: #fff;
+.hp_bg_accentColor {
+  background-color: #406150;
 }
 
 /* js対応スタイル */

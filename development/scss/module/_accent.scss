@@ -1,0 +1,14 @@
+.el_accent_head {
+	background-color: $accent_color;
+	border-radius: 38px;
+	color: $sub_color;
+	display: inline-block;
+	height: 38px;
+	@include f_around(20 , 30 , false , false);
+	line-height: 38px;
+	text-align: center;
+
+	a {
+		color: $sub_color;
+	}
+}

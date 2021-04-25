@@ -31,14 +31,26 @@ $space_endValue: 15 !default;
 }
 
 .hp_subBg {
-	background-color: $bg_color;
-}
-
-.hp_fotterBg {
-	background-color: $accentSub_color;
+	background-color: $support_color;
 }
 
 // テキストカラー
 .hp_textw {
 	color: $sub_color;
+}
+
+// flex_column
+.hp_flex_column {
+	flex-direction: column;
+}
+
+// 背景色
+.hp_bg_supportColor {
+	background-color: $support_color;
+}
+.hp_bg_subColor {
+	background-color: $accentSub_color;
+}
+.hp_bg_accentColor {
+	background-color: $accent_color;
 }

@@ -9,10 +9,7 @@
 
 .el_section_title::after {
 	display: block;
-	font-size: rem(45);
-	@include f_around(45 , false , 700 , false);
-	line-height: 0;
-	padding-top: 17px;
+	@include f_around(45 , 45 , 700 , false);
 	text-transform: capitalize;
 }
 
@@ -23,9 +20,6 @@
 	content: "concept";
 }
 
-.el_section_service {
-	margin-top: 86px;
-}
 .el_section_service::after {
 	content: "service";
 }
@@ -44,4 +38,22 @@
 }
 .el_section_contact::after {
 	content: "contact";
+}
+
+// service
+.el_section_service {
+	margin: 0 auto;
+	margin-top: 80px;
+	max-width: 1250px;
+}
+.el_section_service::before {
+	content: url(../../../public/assets/img/symbol/service/humans.svg);
+	position: absolute;
+	right: -30px;
+	top: -30px;
+}
+
+.el_section_subTitle {
+	margin-top: 80px;
+	text-align: center;
 }

@@ -47,3 +47,8 @@
 .el_strongBox_annotation {
 	@include f_around(13 , false , 600 , false);
 }
+
+// plan
+.bl_strongContainer {
+	display: flex;
+}
