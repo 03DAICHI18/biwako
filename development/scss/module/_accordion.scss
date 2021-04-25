@@ -1,0 +1,99 @@
+// *************************
+/* bl_accordion */
+.el_accordion_btn {
+	display: flex;
+	position: relative;
+	&::before {
+		content: "Q.";
+	}
+}
+
+// ************
+.el_accordion_icon {
+	display: block;
+	margin-left: auto;
+
+	&::before {
+		background: #fff;
+		content: "";
+		height: 2px;
+		position: absolute;
+		right: 8px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 24px;
+	}
+	&::after {
+		background: #fff;
+		content: "";
+		height: 24px;
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: transform .2s;
+		width: 2px;
+	}
+}
+
+.el_accordion_icon.is_open::after {
+	background-color: transparent;
+	content: "";
+	display: inline-block;
+	height: 14px;
+	transform: rotate(225deg);
+	transition: transform .2s;
+	width: 14px;
+}
+// ************
+
+.bl_accordion_innerMenu {
+	font-weight: 400;
+	padding: 50px 0 30px;
+
+	&::before {
+		content: "A.";
+		margin-right: .3em;
+		vertical-align: top;
+	}
+
+	.el_accordion_innertext {
+		display: inline-block;
+		width: 90%;
+	}
+}
+
+
+.bl_accordion_menu:before {
+	background: #fff;
+	content: "";
+	height: 2px;
+	position: absolute;
+	right: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 24px;
+}
+
+.bl_accordion_menu:after {
+	background: #fff;
+	content: "";
+	height: 24px;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all .3s;
+	width: 2px;
+}
+
+/* 縦線（after）だけ縦回転させる */
+.bl_accordion_menu.open:after {
+	opacity: 0;
+	top: 25%;
+	transform: rotate(90deg);
+}
+
+.el_accordion_btn {
+	width: 100%;
+}

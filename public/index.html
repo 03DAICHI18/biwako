@@ -39,29 +39,29 @@
 
 </head>
 <body>
-  <div>
-    <header>
-      <nav class="bl_header">
-        <h1 class="el_logo"><img src="" alt="ロゴ"></h1>
-        <ul class="bl_header_block">
-          <li class="el_header_list"><a class="el_nav_link" href="#concept">Concept</a></li>
-          <li class="el_header_list"><a class="el_nav_link" href="#service">Service</a></li>
-          <li class="el_header_list"><a class="el_nav_link" href="#plan">Plan</a></li>
-          <li class="el_header_list"><a class="el_nav_link" href="#activety">Activety</a></li>
-          <li class="el_header_list"><a class="el_nav_link" href="#information">Information</a></li>
-          <li class="el_header_list"><a class="el_nav_link" href="#faq">FAQ</a></li>
-          <li class="el_header_list el_logo"><a class="el_nav_link" href=""><img src="" alt="予約"></a></li>
-          <li class="el_header_list el_logo"><a class="el_nav_link" href="#contact"><img src="" alt="お問い合わせ"></a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="ly_fv">
-      <picture>
-        <source media="(min-width: 961px)" srcset="./assets/img/logo/fv.png">
-        <source media="(max-width: 960px)" srcset="./assets/img/txt_bg/fv_sp.png">
-        <img src="./assets/img/logo/fv.png" alt="鼻炎・花粉・ウィルス対策の新常識シュッと1秒「鼻バリア」">
-      </picture>
-      <!-- <div class="el_fvImg"><img src="" alt=""></div>
+  <header>
+    <nav class="bl_header">
+      <h1 class="el_logo"><img src="" alt="ロゴ"></h1>
+      <ul class="bl_header_block">
+        <li class="el_header_list"><a class="el_nav_link" href="#concept">Concept</a></li>
+        <li class="el_header_list"><a class="el_nav_link" href="#service">Service</a></li>
+        <li class="el_header_list"><a class="el_nav_link" href="#plan">Plan</a></li>
+        <li class="el_header_list"><a class="el_nav_link" href="#activety">Activety</a></li>
+        <li class="el_header_list"><a class="el_nav_link" href="#information">Information</a></li>
+        <li class="el_header_list"><a class="el_nav_link" href="#faq">FAQ</a></li>
+        <li class="el_header_list el_logo"><a class="el_nav_link" href=""><img src="" alt="予約"></a></li>
+        <li class="el_header_list el_logo"><a class="el_nav_link" href="#contact"><img src="" alt="お問い合わせ"></a></li>
+      </ul>
+    </nav>
+  </header> <!-- header -->
+
+  <div class="ly_fv">
+    <picture>
+      <source media="(min-width: 961px)" srcset="./assets/img/logo/fv.png">
+      <source media="(max-width: 960px)" srcset="./assets/img/txt_bg/fv_sp.png">
+      <img src="./assets/img/logo/fv.png" alt="鼻炎・花粉・ウィルス対策の新常識シュッと1秒「鼻バリア」">
+    </picture>
+    <!-- <div class="el_fvImg"><img src="" alt=""></div>
       <div class="el_fvText">
         <img src="" alt="水と暮らし、水と遊び、水と憩う">
         <img src="" alt="なぎさ公園サンシャインビーチ">
@@ -70,11 +70,11 @@
         <p class="el_fv_contact">空き状況と予約はこちら</p>
       </div>
       <div class="el_fvImg"><img src="" alt=""></div> -->
-    </div>
-  </div>
+  </div> <!-- fv -->
+
   <main>
-    <section class="ly_concept hp_Bg">
-      <h2 id="concept" class="el_section_title el_section_concept">コンセプト</h2>
+    <section id="concept" class="ly_concept hp_Bg">
+      <h2 class="el_section_title el_section_concept hp_textw">コンセプト</h2>
       <div class="un_concept_textWrap">
         <p>湖の都、大津。</p>
         <p>水と暮らし、水と遊び、水と憩う。</p>
@@ -101,38 +101,419 @@
         </p>
       </div>
       <span class="un_concept_bottomBg"></span>
-    </section>
-    <section>
-      <h2 id="service" class="el_section_title el_section_service">サービス</h2>
+    </section> <!-- concept -->
+
+    <section id="service">
+      <h2 class="el_section_title el_section_service">サービス</h2>
       <p>びわこレイクサイドBBQは、開放的なアウトドアライフが楽しめる、<br>湖と自然の景観が自慢のバーベキュー場です。</p>
-      <div>
+      <div class="bl_slide_relative">
         <div class="bl_slide_container swiper-container">
           <div class="swiper-wrapper">
-            <div class="js_slide_item swiper-slide"><img src="./assets/img/photo/slide_img.jpg" alt=""></div>
-            <div class="js_slide_item swiper-slide"><img src="./assets/img/photo/slide_img.jpg" alt=""></div>
-            <div class="js_slide_item swiper-slide"><img src="./assets/img/photo/slide_img.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/photo/slide_img.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/photo/slide_img.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/photo/slide_img.jpg" alt=""></div>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+        </div>
+        <button type="button" class="swiper-button-prev"><img src="./assets/img/symbol/concept/slidebtn_left.svg" alt=""></button>
+        <button type="button" class="swiper-button-next"><img src="./assets/img/symbol/concept/slidebtn_right.svg" alt=""></button>
+      </div>
+      <div class="bl_strongBox">
+
+        <div class="el_strongBox_ttlblock">
+          <p>BBQ会場利用料</p>
+        </div>
+
+        <div class="el_strongBox_mainBlock">
+          <p>3000円/1組</p>
+        </div>
+
+        <div class="el_strongBox_subBlock">
+          <ul>
+            <li>●基本機材貸し出し<span>（中グリル、網、着火マン、食材トング、炭バサミ）</span></li>
+            <li>●１日無料駐車場チケット</li>
+            <li>●廃炭/ゴミの回収</li>
+          </ul>
         </div>
       </div>
-    </section>
-    <section class="hp_subBg">
-      <h2 id="plan" class="el_section_title el_section_plan">プラン</h2>
-    </section>
-    <section class="hp_Bg">
-      <h2 id="activety" class="el_section_title el_section_activety">アクティビティ</h2>
-    </section>
-    <section>
-      <h2 id="information" class="el_section_title el_section_information">施設情報</h2>
-    </section>
-    <section class="hp_Bg">
-      <h2 id="faq" class="el_section_title el_section_faq">よくある質問</h2>
-    </section>
-    <section>
-      <h2 id="contact" class="el_section_title el_section_contact">コンタクト</h2>
-    </section>
-  </main>
+
+      <h3><img src="./assets/img/logo/point.svg" alt="気になる！3つのポイント"></h3>
+      <div class="bl_un_point_contaier">
+        <ul>
+          <li>
+            <div><img src="./assets/img/symbol/service/point_01.png" alt=""></div>
+            <h4>予約がカンタン</h4>
+            <p>WEBのみで予約完結可能</p>
+            <p>(電話予約は承っておりません)</p>
+            <p><a href="">予約はこちら</a></p>
+          </li>
+          <li>
+            <div><img src="./assets/img/symbol/service/point_02.png" alt=""></div>
+            <h4>アクティビティが充実</h4>
+            <p>WEBのみで予約完結可能(電話予約は承っておりません)</p>
+            <p><a href="">予約はこちら</a></p>
+          </li>
+          <li>
+            <div><img src="./assets/img/symbol/service/point_03.png" alt=""></div>
+            <h4>充実した設備</h4>
+            <ul>
+              <li>・駐車場 / トイレ / 自販機あり</li>
+              <li>・水道 / 炊事場あり</li>
+              <li>・コンビニとスーパーが近い</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section> <!-- service -->
+
+    <section id="plan" class="hp_subBg">
+      <h2 class="el_section_title el_section_plan hp_textw">プラン</h2>
+      <p class="un_plan_read">食材と飲み物以外のBBQに必要な機材が全てセットになったVIPプランと、<br>必要な物だけ単品レンタルできるSIMPLEプランの２種類をご用意。
+      </p>
+      <div class="bl_strongContainer">
+        <div class="bl_strongBox">
+          <div class="el_strongBox_ttlblock">
+            <p>食材のみ準備すれば手ぶらでOK</p>
+            <h3>①全部おまかせ VIPプラン</h3>
+          </div>
+          <div class="el_strongBox_mainBlock">
+            <p><img src="./assets/img/photo/plan_img.png" alt=""></p>
+            <p>料金</p>
+            <p>9000円/1組</p>
+            <p>（BBQ場利用料 3,000円 / VIP料金 6,000円）</p>
+            <ul>
+              <li>面倒な設営・片付け、火起こしまで全てお任せ！</li>
+              <li>初心者でも安心！必要な機材や食器は全てご用意</li>
+              <li>テントやチェアも付いているので快適！</li>
+            </ul>
+          </div>
+          <div class="el_strongBox_subBlock">
+            <div class="el_strongBox_innerBlock">
+              <p>BBQ会場利用共通</p>
+              <ol>
+                <li>①基本機材貸し出し※食材・飲み物別途（中グリル、網、着火マン、食材トング、炭バサミ）</li>
+                <li>②１日無料駐車場チケット</li>
+                <li>③廃炭/ゴミの回収</li>
+              </ol>
+            </div>
+            <div class="el_strongBox_innerBlock">
+              <p>VIPセット</p>
+              <ol>
+                <li>④テーブル・イス・タープテント・グリル等BBQに必要な各種機材</li>
+                <li>⑤機材類の設営/撤去</li>
+              </ol>
+            </div>
+            <p class="el_linkBtn"><a href="">セット内容の詳細を見る</a></p>
+          </div>
+        </div>
+
+        <div class="bl_strongBox">
+          <div class="el_strongBox_ttlblock">
+            <p>必要な物は単品レンタル可能</p>
+            <h3>②お手頃 SIMPLEプラン</h3>
+          </div>
+          <div class="el_strongBox_mainBlock">
+            <p><img src="./assets/img/photo/plan_img.png" alt=""></p>
+            <p>料金</p>
+            <p>3000円/1組</p>
+            <p>（BBQ場利用料 3,000円 / 機材単品貸出料金 300円〜）</p>
+            <ul>
+              <li>機材や食器持参で、リーズナブルに楽しめる！</li>
+            </ul>
+          </div>
+          <div class="el_strongBox_subBlock">
+            <div class="el_strongBox_innerBlock">
+              <p>BBQ会場利用共通</p>
+              <ol>
+                <li>①基本機材貸し出し※食材・飲み物別途（中グリル、網、着火マン、食材トング、炭バサミ）</li>
+                <li>②１日無料駐車場チケット</li>
+                <li>③廃炭/ゴミの回収</li>
+              </ol>
+            </div>
+            <p>基本機材以外に何を持っていったらいい...?</p>
+            <p>何がレンタルできるの...?</p>
+            <p>＼そんな方は、こちらをチェック／</p>
+            <p class="el_linkBtn"><a href="">機材詳細を見る</a></p>
+          </div>
+        </div>
+        <p class="el_linkBtn"><a href="">空き状況と予約はこちら</a></p>
+        <ul>
+          <li>※1組10人まで(3歳以下は人数に含みません) ※10名以上での利用の場合は分けてご予約下さい。</li>
+          <li>※人数分の備品をご用意致します。 ※GW期間利用料金とは異なるのでご注意下さい。</li>
+          <li>※指定分別されてないゴミは回収できません。</li>
+        </ul>
+      </div>
+    </section> <!-- plan -->
+
+    <section id="activety" class="hp_Bg">
+      <h2 class="el_section_title el_section_activety hp_textw">アクティビティ</h2>
+      <div class="un_activety_read">
+        <p>BBQ利用なしでもOK！琵琶湖でアクティビティを体験しませんか？</p>
+        <p>初めての方でも使い方のレクチャーがありますので安心してご利用頂けます。</p>
+        <p>
+          SUPのレンタルや、日本ではなかなかできない足漕ぎSUPの他、<br>
+          テントサウナで琵琶湖でととのうことも！
+        </p>
+      </div>
+      <div class="un_activety_textBox">
+        <p>SUP：2,000円〜 / 足漕ぎSUP：3,000円〜 / テントサウナ：1,000円〜</p>
+        <p>アクティビティレンタルにて、BBQ会場もご利用の場合、セット割引でBBQ会場利用料金が20％OFF！</p>
+      </div>
+      <ul class="un_activety_commentBox">
+        <li>※水着・タオル・サンダルはご持参ください。※台数に限りがありますのでご予約をオススメします。</li>
+        <li>※傷害保険が必要なお客様は各自にてご対応お願いします。</li>
+      </ul>
+      <div class="un_activety_mainContainer">
+        <div class="un_activety_imgContainer">
+          <div class="un_activety_img"><img src="./assets/img/photo/activety_img_01.png" alt=""></div>
+          <div class="un_activety_img"><img src="./assets/img/photo/activety_img_02.png" alt=""></div>
+        </div>
+        <div class="un_activety_descriptionContainer">
+          <h3 class="un_activety_descriptiontitle">SUP</h3>
+          <p>SUP（サップ）：『Stand Up Paddleboard』の略称。近年人気のウォータースポーツ。のんびり水上散歩を楽しめます。</p>
+          <h4 class="un_activety_descriptionPrice">レンタル料金</h4>
+          <ul>
+            <li>50分：2,000円</li>
+            <li>2名利用時：3,500円</li>
+          </ul>
+          <p class="un_activety_descriptionLink">詳細を見る</p>
+        </div>
+      </div>
+      <div class="un_activety_mainContainer">
+        <div class="un_activety_imgContainer">
+          <div class="un_activety_img"><img src="./assets/img/photo/activety_img_03.png" alt=""></div>
+          <div class="un_activety_img"><img src="./assets/img/photo/activety_img_04.png" alt=""></div>
+        </div>
+        <div class="un_activety_descriptionContainer">
+          <h3 class="un_activety_descriptiontitle">足漕ぎSUP</h3>
+          <p>SUPから新たなタイプのアクティビティ。<br>ハンドル操作ができ、ペダルを踏んで自転車のように進む事ができます。</p>
+          <h4 class="un_activety_descriptionPrice">レンタル料金</h4>
+          <ul>
+            <li>50分：3,000円</li>
+            <li>2名利用時：5,500円</li>
+          </ul>
+          <p class="un_activety_descriptionLink">詳細を見る</p>
+        </div>
+      </div>
+      <div class="un_activety_mainContainer">
+        <div class="un_activety_imgContainer">
+          <div class="un_activety_img"><img src="./assets/img/photo/activety_img_05.png" alt=""></div>
+          <div class="un_activety_img"><img src="./assets/img/photo/activety_img_06.png" alt=""></div>
+        </div>
+        <div class="un_activety_descriptionContainer">
+          <h3 class="un_activety_descriptiontitle">テントサウナ</h3>
+          <p>自然の中で手軽にサウナキャンプを楽しめるテント型サウナ。ロウリュもできてととのう事間違いなし！</p>
+          <h4 class="un_activety_descriptionPrice">レンタル料金</h4>
+          <ul>
+            <li>30分：1,000円</li>
+            <li>2人〜：800円/人</li>
+          </ul>
+          <p class="un_activety_descriptionLink">詳細を見る</p>
+        </div>
+      </div>
+      <p class="el_linkBtn"><a href="">空き状況と予約はこちら</a></p>
+    </section> <!-- activety -->
+
+    <section id="information">
+      <h2 class="el_section_title el_section_information">施設情報</h2>
+      <dl>
+        <dt class="el_list_term el_accent_head">2021年の利用期間（有料）</dt>
+        <dd class="el_list_description">
+          <p>5/8（土）〜10/31（日）までの土・日・祝日</p>
+          <p>（新型コロナウイルス感染拡大の状況に伴い、営業に変更が生じる場合がございます。）</p>
+          <p>※ゴールウィーク期間の営業内容とは異なりますのでご注意下さい。</p>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="el_list_term el_accent_head">施設名</dt>
+        <dd class="el_list_description">
+          <p>大津湖岸なぎさ公園サンシャインビーチ</p>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="el_list_term el_accent_head">所在地</dt>
+        <dd class="el_list_description">
+          <p>滋賀県大津市由美浜</p>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="el_list_term el_accent_head">時間</dt>
+        <dd class="el_list_description">
+          <p>10−16時まで（火の許可使用の時間となります。）</p>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="el_list_term el_accent_head">利用方法</dt>
+        <dd class="el_list_description">
+          <p>予約制：WEB申し込み or TELにて</p>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="el_list_term el_accent_head">区間数</dt>
+        <dd class="el_list_description">
+          <p>15組限定：1組10人まで</p>
+          <p>※3歳以下は人数に含みません。</p>
+          <p>※10名以上での利用の場合は分けてご予約追加下さい。</p>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="el_list_term el_accent_head">料金</dt>
+        <dd class="el_list_description">
+          <p>3,500円(税込)/1組</p>
+          <p>↓↓↓</p>
+          <p>2021年オープン価格：3,000円(税込)/1組</p>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="el_list_term el_accent_head">ご予約に含まれるセット内容</dt>
+        <dd class="el_list_description">
+          <ul>
+            <li>・バーベキュー場利用</li>
+            <li>・貸出品：（中）グリル、網、着火マン、食材トング、炭バサミ<br>（着火剤・炭は別途となっております。食材は隣のスーパーにてお買い求め下さい。）</li>
+            <li>・無料駐車場チケット</li>
+            <li>・廃炭/ゴミ回収</li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="el_list_term el_accent_head">その他のプラン</dt>
+        <dd class="el_list_description">
+          <ol>
+            <li>
+              ①全部おまかせBBQ VIPプラン
+              <span>バーベキュー場利用料3,000円＋6,000円＝9,000円(税込) / 組</span>
+            </li>
+            <li>
+              ②お手頃 SIMPLEプラン
+              <span>バーベキュー場利用料3,000円 ＋ お好きな機材・器具を選択</span>
+            </li>
+            <li>
+              ③体験アクティビティ
+              <p>【SUP】：50分 2,000円/人 | 2名利用 3,500円/人</p>
+              <p>【足漕ぎSUP】：50分 3,000円/人 | 2名利用 5,500円/人</p>
+              <p>【テントサウナ】：30分 1,000円/人 | 2名〜利用 800円/人</p>
+              <ul>
+                <li>・水着/タオル/サンダルをご持参下さい。</li>
+                <li>・ライフジャケット貸出し可能です。</li>
+                <li>・台数に限りがありますのでご予約をオススメします。</li>
+                <li>・傷害保険が必要なお客様は各自にてご対応お願いします。</li>
+              </ul>
+            </li>
+          </ol>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="el_list_term el_accent_head">アクセス</dt>
+        <dd class="el_list_description">
+          <dl>
+            <dt>【車】</dt>
+            <dd>京都方面より名神高速「大津インター」から琵琶湖方面へ約10〜15分</dd>
+            <dd>草津方面より近江大橋東詰めから西詰めへ渡り約1分</dd>
+          </dl>
+          <dl>
+            <dt>【電車】</dt>
+            <dd>JR琵琶湖線「膳所駅」より徒歩17分</dd>
+            <dd>京阪石山坂本線「錦駅」より徒歩13分</dd>
+          </dl>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="el_list_term el_accent_head">駐車場</dt>
+        <dd class="el_list_description">
+          <p>有り　最大233台</p>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="el_list_term el_accent_head">諸注意</dt>
+        <dd class="el_list_description">
+          <ul>
+            <li>・ピクニック等、火の使用が無い場合にはお支払いの必要はございません。</li>
+            <li>・利用後は炭は炭捨て場へ、その他のゴミも全てゴミ捨て場にて分別されませんと回収不可となりますのでご協力お願いします。</li>
+            <li>・バーベキューは芝生広場竹林エリア内でのみ可能です。直火は禁止です。</li>
+            <li>・バーベキューコンロや食器類を洗う行為は禁止です。</li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="el_list_term el_accent_head">運営元</dt>
+        <dd class="el_list_description">
+          <p>バーベキュー隊</p>
+          <p><a href="https://www.bbq-ranger.com" target="_blank" rel="noopener noreferrer">https://www.bbq-ranger.com</a></p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13072.851403434828!2d135.88364642929744!3d35.00137656261349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010d25d65227f5%3A0xdcab13309c62aedb!2z44K144Oz44K344Oj44Kk44Oz44OT44O844OB!5e0!3m2!1sja!2sjp!4v1619319688528!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="el_list_term el_accent_head">利用可能エリア</dt>
+        <dd class="el_list_description">
+          <p>マップ赤枠の松林エリアのみバーベキュー利用可能となります。</p>
+          <p><img src="./assets/img/photo/information_map.png" alt="BBQ利用可能エリア"></p>
+        </dd>
+      </dl>
+    </section> <!-- information -->
+
+    <section id="faq" class="hp_Bg">
+      <h2 class="el_section_title el_section_faq hp_textw">よくある質問</h2>
+
+      <dl class="bl_accordion_block">
+        <dt class="bl_accordion_menu">
+          <button class="el_accordion_btn js_accordion_btn" type="button">予約はいつから可能ですか？<span class="el_accordion_icon"></span></button>
+        </dt>
+        <dd class="bl_accordion_innerMenu">
+          <span class="el_accordion_innerText">毎月20日に翌月の営業カレンダーが公開となりますのでご予約開始となります</span>
+        </dd>
+        <dt class="bl_accordion_menu">
+          <button class="el_accordion_btn js_accordion_btn" type="button">支払いはどうすれば良いですか？<span class="el_accordion_icon"></span></button>
+        </dt>
+        <dd class="bl_accordion_innerMenu">
+          <span class="el_accordion_innerText">当日に現地スタッフに現金でお支払い下さい。</span>
+        </dd>
+        <dt class="bl_accordion_menu">
+          <button class="el_accordion_btn js_accordion_btn" type="button">初心者ですけど大丈夫ですか？<span class="el_accordion_icon"></span></button>
+        </dt>
+        <dd class="bl_accordion_innerMenu">
+          <span class="el_accordion_innerText">レンタル機材の設営や火起こしのレクチャーさせて頂きますので安心して下さい。</span>
+        </dd>
+        <dt class="bl_accordion_menu">
+          <button class="el_accordion_btn js_accordion_btn" type="button">雨天などでキャンセルは可能でしょうか？<span class="el_accordion_icon"></span></button>
+        </dt>
+        <dd class="bl_accordion_innerMenu">
+          <span class="el_accordion_innerText">雨天などでキャンセルは可能でしょうか？</span>
+        </dd>
+        <dt class="bl_accordion_menu">
+          <button class="el_accordion_btn js_accordion_btn" type="button">キャンプとして宿泊は可能ですか？<span class="el_accordion_icon"></span></button>
+        </dt>
+        <dd class="bl_accordion_innerMenu">
+          <span class="el_accordion_innerText">宿泊は不可となっております。</span>
+        </dd>
+      </dl>
+    </section> <!-- faq -->
+
+    <section id="contact">
+      <h2 class="el_section_title el_section_contact">コンタクト</h2>
+      <div class="un_section_read">
+        <p>びわこレイクサイドBBQへのお問い合わせは、<br>プライバシーポリシーをご確認のうえ、下記フォームにご記入の上送信ください。</p>
+        <p>お問い合わせいただいた内容につきましては、担当者より折り返しご連絡いたします。</p>
+      </div>
+      <form action="#" method="post">
+        <p class="label">お問い合わせ項目*</p>
+        <select name="select">
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+        <label for="name">貴社名 / お名前*</label>
+        <input id="name" type="text" name="yourname" required>
+        <label for="mail">メールアドレス*</label>
+        <input id="mail" type="email" name="mail" required>
+        <label for="num">お電話番号*</label>
+        <input id="num" type="number" name="num" required>
+        <label for="num">お問い合わせ内容*</label>
+        <textarea id="comment" name="comment" required></textarea>
+        <button type="submit" class="el_accent_head">確認して送信する</button>
+      </form>
+    </section> <!-- contact -->
+
+  </main> <!-- main -->
+
   <footer class="footer hp_fotterBg">
     <div class="ly_footer_wrapper">
       <ul>
@@ -153,33 +534,11 @@
     <div class="el_footer_copy">
       <small>&copy; びわこレイクサイドBBQ</small>
     </div>
-  </footer>
+  </footer> <!-- footer -->
+
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="assets/js/plugin/swiper.min.js"></script>
   <script src="assets/js/common.js"></script>
-  <script>
-    var mySwiper = new Swiper('.swiper-container', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      loop: true,
-      slidesPerView: 3,
-      spaceBetween: 20,
-      // 自動スライド
-      autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-      },
-      // ブレイクポイント
-      breakpoints: {
-        780: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-          centeredSlides: true,
-        },
-      }
-    })
-  </script>
+  <script src="assets/js/swiper.js"></script>
 </body>
 </html>

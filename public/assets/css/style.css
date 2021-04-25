@@ -25,6 +25,7 @@ img {
 /* 共通モジュールのスタイル */
 /************************************************/
 .el_section_title {
+  color: #406150;
   font-size: 1.0625rem;
   line-height: 1.58824;
   position: relative;
@@ -73,15 +74,148 @@ img {
   display: block;
 }
 
-/*slick setting*/
+/*swiper setting*/
 .bl_slide_container {
-  max-width: 1130px;
+  margin: 0 auto;
+  max-width: 1100px;
 }
 
-@media screen and (max-width: 1100px) {
-  .bl_slide_container {
-    padding: 0 20px;
+.swiper-button-prev, .swiper-button-next {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: none;
+  /* デフォルトのボタン画像を消す */
+  border: none;
+  height: 38px;
+  padding: 0;
+  width: 38px;
+  z-index: 100;
+}
+
+.swiper-button-prev img:hover, .swiper-button-next img:hover {
+  cursor: pointer;
+}
+
+.bl_slide_relative {
+  margin: 0 auto;
+  max-width: 1230px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (max-width: 1025px) {
+  .bl_slide_relative {
+    max-width: 1000px;
   }
+}
+
+/* bl_accordion */
+.el_accordion_btn {
+  display: flex;
+  position: relative;
+}
+
+.el_accordion_btn::before {
+  content: "Q.";
+}
+
+.el_accordion_icon {
+  display: block;
+  margin-left: auto;
+}
+
+.el_accordion_icon::before {
+  background: #fff;
+  content: "";
+  height: 2px;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 24px;
+}
+
+.el_accordion_icon::after {
+  background: #fff;
+  content: "";
+  height: 24px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  width: 2px;
+}
+
+.el_accordion_icon.is_open::after {
+  background-color: transparent;
+  content: "";
+  display: inline-block;
+  height: 14px;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  width: 14px;
+}
+
+.bl_accordion_innerMenu {
+  font-weight: 400;
+  padding: 50px 0 30px;
+}
+
+.bl_accordion_innerMenu::before {
+  content: "A.";
+  margin-right: .3em;
+  vertical-align: top;
+}
+
+.bl_accordion_innerMenu .el_accordion_innertext {
+  display: inline-block;
+  width: 90%;
+}
+
+.bl_accordion_menu:before {
+  background: #fff;
+  content: "";
+  height: 2px;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 24px;
+}
+
+.bl_accordion_menu:after {
+  background: #fff;
+  content: "";
+  height: 24px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  transition: all .3s;
+  width: 2px;
+}
+
+/* 縦線（after）だけ縦回転させる */
+.bl_accordion_menu.open:after {
+  opacity: 0;
+  top: 25%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.el_accordion_btn {
+  width: 100%;
 }
 
 /* セクション独自のスタイル */
@@ -242,6 +376,10 @@ img {
 
 .hp_fotterBg {
   background-color: #70a24d;
+}
+
+.hp_textw {
+  color: #fff;
 }
 
 /* js対応スタイル */

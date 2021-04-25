@@ -1,6 +1,7 @@
 /* 共通モジュールのスタイル */
 /************************************************/
 .el_section_title {
+	color: $accent_color;
 	@include l_height(17 , 27);
 	position: relative;
 	text-align: center;
