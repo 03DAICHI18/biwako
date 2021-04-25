@@ -10,6 +10,7 @@
 .el_section_title::after {
 	display: block;
 	font-size: rem(45);
+	@include f_around(45 , false , 700 , false);
 	line-height: 0;
 	padding-top: 17px;
 	text-transform: capitalize;

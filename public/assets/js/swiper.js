@@ -5,6 +5,7 @@ var mySwiper = new Swiper('.swiper-container', {
   },
   loop: true,
   slidesPerView: 3,
+  spaceBetween: 15,
   // 自動スライド
   autoplay: {
     delay: 3500,

@@ -1,0 +1,49 @@
+.bl_strongBox {
+	border: 5px solid $accent_color;
+	display: flex;
+	height: 126px;
+	margin: 0 auto;
+	margin-top: 56px;
+	max-width: 1136px;
+}
+
+.el_strongBox_ttlblock {
+	align-items: center;
+	background-color: $accent_color;
+	color: $sub_color;
+	display: flex;
+	flex-shrink: 0;
+	@include f_around(27 , false , 700 , false);
+	justify-content: center;
+	text-align: center;
+	width: 183px;
+}
+
+.el_strongBox_mainBlock {
+	align-items: center;
+	border-right: 2px dashed $accent_color;
+	color: $accent_color;
+	display: flex;
+	flex-shrink: 0;
+	@include f_around(60 , false , 700 , false);
+	justify-content: center;
+	width: 392px;
+}
+
+.el_strongBox_subBlock {
+	align-items: center;
+	color: $accent_color;
+	display: flex;
+	@include f_around(20 , false , 700 , false);
+	justify-content: center;
+}
+.el_strongBox_list {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 1.5em;
+}
+.el_strongBox_annotation {
+	@include f_around(13 , false , 600 , false);
+}
