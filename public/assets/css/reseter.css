@@ -151,9 +151,6 @@ ul , ol {
 li {
 	padding: 0;
 }
-li::before {
-	content: "​";
-}
 
 dt {
 	font-weight: 700;

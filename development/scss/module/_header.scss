@@ -1,0 +1,47 @@
+.ly_header {
+	height: 70px;
+	left: 50%;
+	position: absolute;
+	top: 0;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+.ly_header_inner {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1330px;
+	padding: 30px 0;
+}
+
+.bl_header_block {
+	align-items: center;
+	display: flex;
+}
+
+// ロゴ
+.el_logo {
+	background: #bebebe;
+	display: block;
+	height: 45px;
+	width: 148px;
+}
+
+.el_header_list:not(:first-of-type) {
+	margin-left: 39px;
+}
+.el_header_list:last-of-type {
+	margin-left: 10px;
+}
+
+.el_header_list {
+	font-family: robot;
+	font-size: rem(14);
+
+	a {
+		color: #000;
+		display: block;
+	}
+}
