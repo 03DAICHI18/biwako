@@ -5,12 +5,12 @@
 	@include l_height(18 , 27);
 	position: relative;
 	text-align: center;
-}
 
-.el_section_title::after {
-	display: block;
-	@include f_around(45 , 45 , 700 , false);
-	text-transform: capitalize;
+	&::after {
+		display: block;
+		@include f_around(45 , 45 , 700 , false);
+		text-transform: capitalize;
+	}
 }
 
 .el_section_concept {
@@ -45,15 +45,16 @@
 	margin: 0 auto;
 	margin-top: 80px;
 	max-width: 1250px;
-}
-.el_section_service::before {
-	content: url(../../../public/assets/img/symbol/service/humans.svg);
-	@include maxmq(full) {
-		right: 20px;
+
+	&::before {
+		content: url(../../../public/assets/img/symbol/service/humans.svg);
+		@include maxmq(full) {
+			right: 20px;
+		}
+		position: absolute;
+		right: -30px;
+		top: -30px;
 	}
-	position: absolute;
-	right: -30px;
-	top: -30px;
 }
 
 .el_section_subTitle {
@@ -64,5 +65,10 @@
 // Plan
 .el_section_plan {
 	margin: 0 auto;
+	padding-top: 80px;
+}
+
+// activety
+.el_section_activety {
 	padding-top: 80px;
 }

@@ -53,25 +53,23 @@
 	}
 
 	.bl_strongBox_subBlock {
-		// PC時右側
+		// PC時左側
 		.el_accent_head {
 			background-color: $accentSub_color;
 			height: 65px;
 			@include f_around(27 , 40.5 , 700 , false);
 			line-height: 65px;
 			margin-top: 50px;
+			position: relative;
 			width: 100%;
 		}
 	}
 
-	// PC時左側
+	// PC時右側
 	.bl_strongBox:nth-of-type(2) .el_accent_head {
-		height: 65px;
-		@include f_around(27 , 40.5 , 700 , false);
-		line-height: 65px;
 		margin-top: 75px;
-		position: relative;
 	}
+
 	.bl_strongBox:nth-of-type(2) .el_accent_head::before {
 		color: $accentSub_color;
 		content: "＼そんな方は、こちらをチェック／";
@@ -80,5 +78,34 @@
 		left: 1.5em;
 		position: absolute;
 		top: -55px;
+	}
+}
+
+#activety {
+	.el_accent_head {
+		height: 82px;
+		@include f_around(35 , 52.5 , 700 , false);
+		line-height: 82px;
+		margin: 75px 0 ;
+		text-align: center;
+		width: 730px;
+	}
+	.el_accent_wrap {
+		margin: 0 auto;
+		max-width: 1120px;
+		position: relative;
+		text-align: center;
+	}
+
+	.el_headTree_first , .el_headTree_second {
+		position: absolute;
+		top: 0;
+	}
+
+	.el_headTree_first {
+		left: 15px;
+	}
+	.el_headTree_second {
+		right: -15px;
 	}
 }
