@@ -42,7 +42,7 @@
   <header>
     <nav class="ly_header">
       <div class="ly_header_inner">
-        <h1 class="el_logo"><img src="" alt="ロゴ"></h1>
+        <h1 class="el_logo"><img src="./assets/img/logo/logo.svg" alt="びわこレイクサイドBBQ"></h1>
         <ul class="bl_header_block">
           <li class="el_header_list"><a class="el_nav_link" href="#concept">Concept</a></li>
           <li class="el_header_list"><a class="el_nav_link" href="#service">Service</a></li>
@@ -50,24 +50,26 @@
           <li class="el_header_list"><a class="el_nav_link" href="#activety">Activety</a></li>
           <li class="el_header_list"><a class="el_nav_link" href="#information">Information</a></li>
           <li class="el_header_list"><a class="el_nav_link" href="#faq">FAQ</a></li>
-          <li class="el_header_list el_logo"><a class="el_nav_link" href=""><img src="" alt="予約"></a></li>
-          <li class="el_header_list el_logo"><a class="el_nav_link" href="#contact"><img src="" alt="お問い合わせ"></a></li>
+          <li class="el_header_list"><a class="el_nav_link" href=""><img src="./assets/img/logo/reserve.svg" alt="予約"></a></li>
+          <li class="el_header_list"><a class="el_nav_link" href="#contact"><img src="./assets/img/logo/contact.svg" alt="お問い合わせ"></a></li>
         </ul>
       </div>
     </nav>
   </header> <!-- header -->
 
   <div class="ly_fv">
-    <!-- 現在はbackground-imageで画像配置しているだけ -->
-    <!-- <div class="el_fvImg"><img src="" alt=""></div>
-      <div class="el_fvText">
-        <img src="" alt="水と暮らし、水と遊び、水と憩う">
-        <img src="" alt="なぎさ公園サンシャインビーチ">
-        <img src="" alt="びわレイクサイドBBQ">
-        <img src="" alt="土日祝のみ営業（2021年5月8日〜2021年10月31日まで）1組3,000円〜webかtelにて簡単予約">
-        <p class="el_fv_contact">空き状況と予約はこちら</p>
+    <div class="un_fv_container">
+      <p class="un_fv_copy">
+        <img src="./assets/img/logo/fv_copy.png" alt="水と暮らし、水と遊び、水と憩う　なぎさ公園サンシャインビーチ　びわレイクサイドBBQ">
+      </p>
+      <div class="un_fv_text">
+        <p>土日祝のみ営業（2021年5月8日〜2021年10月31日まで）</p>
+        <p>1組3,000円〜 / WEBかTELにて簡単予約</p>
       </div>
-      <div class="el_fvImg"><img src="" alt=""></div> -->
+      <div class="un_fv_contactContainer">
+        <p class="un_fv_contact">空き状況と予約はこちら</p>
+      </div>
+    </div>
   </div> <!-- fv -->
 
   <main>
@@ -109,8 +111,8 @@
             </p>
           </div>
         </div>
-        <span class="ly_concept_treeLeft"><img src="./assets/img/symbol/concept/bg_tree_left.png" alt=""></span>
-        <span class="ly_concept_treeRight"><img src="./assets/img/symbol/concept/bg_tree_right.png" alt=""></span>
+        <span class="ly_concept_treeFirst"><img src="./assets/img/symbol/concept/bg_tree_first.png" alt=""></span>
+        <span class="ly_concept_treeSecond"><img src="./assets/img/symbol/concept/bg_tree_second.png" alt=""></span>
       </div>
       <span class="un_concept_bottomBg"></span>
     </section> <!-- concept -->
@@ -130,16 +132,13 @@
         <button type="button" class="swiper-button-next"><img src="./assets/img/symbol/service/slidebtn_right.svg" alt=""></button>
       </div>
       <div class="bl_strongBox">
-
         <div class="el_strongBox_ttlblock">
           <p>BBQ会場<br>利用料</p>
         </div>
-
-        <div class="el_strongBox_mainBlock">
+        <div class="bl_strongBox_mainBlock">
           <p>3000円/1組</p>
         </div>
-
-        <div class="el_strongBox_subBlock">
+        <div class="bl_strongBox_subBlock">
           <ul class="el_strongBox_list">
             <li>●基本機材貸し出し<span class="el_strongBox_annotation">（中グリル、網、着火マン、食材トング、炭バサミ）</span></li>
             <li>●１日無料駐車場チケット</li>
@@ -184,82 +183,104 @@
     </section> <!-- service -->
 
     <section id="plan" class="hp_subBg">
-      <h2 class="el_section_title el_section_plan hp_textw">プラン</h2>
-      <p class="un_plan_read">食材と飲み物以外のBBQに必要な機材が全てセットになったVIPプランと、<br>必要な物だけ単品レンタルできるSIMPLEプランの２種類をご用意。
-      </p>
-      <div class="bl_strongContainer">
-        <div class="bl_strongBox hp_flex_column">
-          <div class="el_strongBox_ttlblock">
-            <p>食材のみ準備すれば手ぶらでOK</p>
-            <h3>①全部おまかせ VIPプラン</h3>
-          </div>
-          <div class="el_strongBox_mainBlock">
-            <p><img src="./assets/img/photo/plan_img.png" alt=""></p>
-            <p>料金</p>
-            <p>9000円/1組</p>
-            <p>（BBQ場利用料 3,000円 / VIP料金 6,000円）</p>
-            <ul>
-              <li>面倒な設営・片付け、火起こしまで全てお任せ！</li>
-              <li>初心者でも安心！必要な機材や食器は全てご用意</li>
-              <li>テントやチェアも付いているので快適！</li>
-            </ul>
-          </div>
-          <div class="el_strongBox_subBlock">
-            <div class="el_strongBox_innerBlock">
-              <p>BBQ会場利用共通</p>
-              <ol>
-                <li>①基本機材貸し出し※食材・飲み物別途（中グリル、網、着火マン、食材トング、炭バサミ）</li>
-                <li>②１日無料駐車場チケット</li>
-                <li>③廃炭/ゴミの回収</li>
-              </ol>
+      <div class="ly_plan_inner">
+        <h2 class="el_section_title el_section_plan hp_textw">バーベキュープラン</h2>
+        <span class="ly_plan_treeFirst"><img src="./assets/img/symbol/plan/tree_first.png.png" alt=""></span>
+        <span class="ly_plan_treeSecond"><img src="./assets/img/symbol/plan/tree_second.png" alt=""></span>
+        <p class="un_plan_read">食材と飲み物以外のBBQに必要な機材が全てセットになったVIPプランと、<br>必要な物だけ単品レンタルできるSIMPLEプランの２種類をご用意。
+        </p>
+        <div class="bl_strongContainer">
+          <div class="bl_strongBox hp_flex_column">
+            <div class="el_strongBox_ttlblock">
+              <p class="el_strongBox_subttl">食材のみ準備すれば手ぶらでOK</p>
+              <h3 class="el_strongBox_ttl">①全部おまかせ VIPプラン</h3>
             </div>
-            <div class="el_strongBox_innerBlock">
-              <p>VIPセット</p>
-              <ol>
-                <li>④テーブル・イス・タープテント・グリル等BBQに必要な各種機材</li>
-                <li>⑤機材類の設営/撤去</li>
-              </ol>
+            <div class="bl_strongBox_mainBlock">
+              <p class="el_strongBox_mainImg">
+                <img src="./assets/img/photo/plan_img.png" alt="">
+                <img class="un_plan_set" src="./assets/img/logo/plan_02.png" alt="こちらのセットが入ってます！">
+              </p>
+              <div class="bl_strongBox_mainText">
+                <p class="bl_strongBox_mainPrice">料金</p>
+                <p class="bl_strongBox_mainValue">9000円/1組</p>
+                <p>（BBQ場利用料 3,000円 / VIP料金 6,000円）</p>
+                <ul class="bl_strongBox_mainList">
+                  <li class="bl_strongBox_mainItem">面倒な設営・片付け、火起こしまで全てお任せ！</li>
+                  <li class="bl_strongBox_mainItem">初心者でも安心！必要な機材や食器は全てご用意</li>
+                  <li class="bl_strongBox_mainItem">テントやチェアも付いているので快適！</li>
+                </ul>
+              </div>
             </div>
-            <p class="el_linkBtn"><a href="">セット内容の詳細を見る</a></p>
+            <div class="bl_strongBox_subBlock">
+              <div class="bl_strongBox_innerBlock">
+                <p class="el_strongBox_subAbout">BBQ会場利用共通</p>
+                <ol>
+                  <li>①基本機材貸し出し<span class="el_strongBox_subtext">※食材・飲み物別途<br>（中グリル、網、着火マン、食材トング、炭バサミ）</span></li>
+                  <li>②１日無料駐車場チケット</li>
+                  <li>③廃炭/ゴミの回収</li>
+                </ol>
+              </div>
+              <div class="el_strongBox_crossIcon"><img src="./assets/img/symbol/plan/cross.svg" alt=""></div>
+              <div class="bl_strongBox_innerBlock">
+                <p class="el_strongBox_subAbout">VIPセット</p>
+                <ol>
+                  <li>④テーブル・イス・タープテント・グリル等BBQに必要な各種機材</li>
+                  <li>⑤機材類の設営/撤去</li>
+                </ol>
+              </div>
+              <p class="el_accent_head"><a href="">セット内容の詳細を見る</a></p>
+            </div>
+            <span class="un_plan_recommend"><img src="./assets/img/logo/plan.png" alt="オススメ！"></span>
+          </div>
+
+          <div class="bl_strongBox hp_flex_column">
+            <div class="el_strongBox_ttlblock">
+              <p class="el_strongBox_subttl">必要な物は単品レンタル可能</p>
+              <h3 class="el_strongBox_ttl">②お手頃 SIMPLEプラン</h3>
+            </div>
+            <div class="bl_strongBox_mainBlock">
+              <p class="el_strongBox_mainImg">
+                <img src="./assets/img/photo/plan_img.png" alt="">
+              </p>
+              <div class="bl_strongBox_mainText">
+                <p class="bl_strongBox_mainPrice">料金</p>
+                <p class="bl_strongBox_mainValue">3000円/1組</p>
+                <p>（BBQ場利用料 3,000円 / 機材単品貸出料金 300円〜）</p>
+                <ul class="bl_strongBox_mainList">
+                  <li class="bl_strongBox_mainItem">機材や食器持参で、リーズナブルに楽しめる！</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bl_strongBox_subBlock">
+              <div class="bl_strongBox_innerBlock">
+                <p class="el_strongBox_subAbout">BBQ会場利用共通</p>
+                <ol>
+                  <li>①基本機材貸し出し<span class="el_strongBox_subtext">※食材・飲み物別途<br>（中グリル、網、着火マン、食材トング、炭バサミ）</span></li>
+                  <li>②１日無料駐車場チケット</li>
+                  <li>③廃炭/ゴミの回収</li>
+                </ol>
+              </div>
+              <div class="el_strongBox_subAddition">
+                <p>基本機材以外に何を持っていったらいい...?</p>
+                <p>何がレンタルできるの...?</p>
+              </div>
+              <p class="el_accent_head"><a href="">機材詳細を見る</a></p>
+            </div>
           </div>
         </div>
-
-        <div class="bl_strongBox hp_flex_column">
-          <div class="el_strongBox_ttlblock">
-            <p>必要な物は単品レンタル可能</p>
-            <h3>②お手頃 SIMPLEプラン</h3>
-          </div>
-          <div class="el_strongBox_mainBlock">
-            <p><img src="./assets/img/photo/plan_img.png" alt=""></p>
-            <p>料金</p>
-            <p>3000円/1組</p>
-            <p>（BBQ場利用料 3,000円 / 機材単品貸出料金 300円〜）</p>
-            <ul>
-              <li>機材や食器持参で、リーズナブルに楽しめる！</li>
-            </ul>
-          </div>
-          <div class="el_strongBox_subBlock">
-            <div class="el_strongBox_innerBlock">
-              <p>BBQ会場利用共通</p>
-              <ol>
-                <li>①基本機材貸し出し※食材・飲み物別途（中グリル、網、着火マン、食材トング、炭バサミ）</li>
-                <li>②１日無料駐車場チケット</li>
-                <li>③廃炭/ゴミの回収</li>
-              </ol>
-            </div>
-            <p>基本機材以外に何を持っていったらいい...?</p>
-            <p>何がレンタルできるの...?</p>
-            <p>＼そんな方は、こちらをチェック／</p>
-            <p class="el_linkBtn"><a href="">機材詳細を見る</a></p>
-          </div>
+        <div class="el_accent_wrap">
+          <p class="el_accent_head"><a href="">空き状況と予約はこちら</a></p>
+          <span class="el_headTree_first"><img src="./assets/img/symbol/plan/tree_third.png" alt=""></span>
+          <span class="el_headTree_second"><img src="./assets/img/symbol/plan/tree_third.png" alt=""></span>
+        </div>
+        <div class="un_addition_container">
+          <ul class="un_addition_inner">
+            <li>※1組10人まで(3歳以下は人数に含みません) ※10名以上での利用の場合は分けてご予約下さい。</li>
+            <li>※人数分の備品をご用意致します。 ※GW期間利用料金とは異なるのでご注意下さい。</li>
+            <li>※指定分別されてないゴミは回収できません。</li>
+          </ul>
         </div>
       </div>
-      <p class="el_linkBtn"><a href="">空き状況と予約はこちら</a></p>
-      <ul>
-        <li>※1組10人まで(3歳以下は人数に含みません) ※10名以上での利用の場合は分けてご予約下さい。</li>
-        <li>※人数分の備品をご用意致します。 ※GW期間利用料金とは異なるのでご注意下さい。</li>
-        <li>※指定分別されてないゴミは回収できません。</li>
-      </ul>
     </section> <!-- plan -->
 
     <section id="activety" class="hp_Bg">
@@ -328,7 +349,7 @@
           <p class="un_activety_descriptionLink">詳細を見る</p>
         </div>
       </div>
-      <p class="el_linkBtn"><a href="">空き状況と予約はこちら</a></p>
+      <p class="el_accent_head"><a href="">空き状況と予約はこちら</a></p>
     </section> <!-- activety -->
 
     <section id="information">

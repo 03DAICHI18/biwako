@@ -7,10 +7,13 @@
 .ly_header_inner {
 	align-items: center;
 	display: flex;
+	@include maxmq(full) {
+		padding: 20px;
+	}
 	justify-content: space-between;
 	margin: 0 auto;
 	max-width: 1330px;
-	padding: 25px 0;
+	padding: 20px 0;
 	width: 100%;
 }
 
@@ -21,14 +24,15 @@
 
 // ロゴ
 .el_logo {
-	background: #bebebe;
-	display: block;
-	height: 45px;
-	width: 148px;
+	margin-left: -25px;
+	margin-top: 10px;
 }
 
 .el_header_list:not(:first-of-type) {
-	margin-left: 39px;
+	margin-left: 35px;
+}
+.el_header_list:nth-last-of-type(2) {
+	margin-left: 43px;
 }
 .el_header_list:last-of-type {
 	margin-left: 10px;
@@ -41,5 +45,10 @@
 	a {
 		color: #000;
 		display: block;
+		width: 100%;
 	}
+}
+
+.el_header_list:hover a img {
+	cursor: pointer;
 }

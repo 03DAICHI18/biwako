@@ -14,7 +14,7 @@
 }
 
 .el_section_concept {
-	padding-top: 75px;
+	padding-top: 80px;
 }
 .el_section_concept::after {
 	content: "concept";
@@ -48,6 +48,9 @@
 }
 .el_section_service::before {
 	content: url(../../../public/assets/img/symbol/service/humans.svg);
+	@include maxmq(full) {
+		right: 20px;
+	}
 	position: absolute;
 	right: -30px;
 	top: -30px;
@@ -56,4 +59,10 @@
 .el_section_subTitle {
 	margin-top: 80px;
 	text-align: center;
+}
+
+// Plan
+.el_section_plan {
+	margin: 0 auto;
+	padding-top: 80px;
 }

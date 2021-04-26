@@ -1,42 +1,23 @@
 .bl_strongBox {
-	border: 5px solid $accent_color;
+	background-color: $sub_color;
 	display: flex;
-	height: 126px;
-	margin: 0 auto;
-	margin-top: 56px;
-	max-width: 1136px;
 }
 
 .el_strongBox_ttlblock {
 	align-items: center;
-	background-color: $accent_color;
 	color: $sub_color;
 	display: flex;
-	flex-shrink: 0;
-	@include f_around(27 , false , 700 , false);
 	justify-content: center;
-	text-align: center;
-	width: 183px;
 }
 
-.el_strongBox_mainBlock {
-	align-items: center;
-	border-right: 2px dashed $accent_color;
-	color: $accent_color;
-	display: flex;
-	flex-shrink: 0;
-	@include f_around(60 , false , 700 , false);
-	justify-content: center;
-	width: 392px;
-}
-
-.el_strongBox_subBlock {
+.bl_strongBox_mainBlock {
 	align-items: center;
 	color: $accent_color;
 	display: flex;
-	@include f_around(20 , false , 700 , false);
 	justify-content: center;
 }
+
+
 .el_strongBox_list {
 	align-items: flex-start;
 	display: flex;
@@ -48,7 +29,176 @@
 	@include f_around(13 , false , 600 , false);
 }
 
-// plan
+
+// service
+#service {
+	.bl_strongBox {
+		border: 5px solid $accent_color;
+		height: 126px;
+		margin: 56px auto 0;
+		max-width: 1136px;
+	}
+	.el_strongBox_ttlblock {
+		background-color: $accent_color;
+		flex-shrink: 0;
+		@include f_around(27 , false , 700 , false);
+		text-align: center;
+		width: 183px;
+	}
+
+	.bl_strongBox_mainBlock {
+		border-right: 2px dashed $accent_color;
+		flex-shrink: 0;
+		@include f_around(60 , false , 700 , false);
+		width: 392px;
+	}
+	.bl_strongBox_subBlock {
+		align-items: center;
+		color: $accent_color;
+		display: flex;
+		@include f_around(20 , false , 700 , false);
+		justify-content: center;
+	}
+}
+
+
+// planのみ
 .bl_strongContainer {
 	display: flex;
+	justify-content: space-between;
+	margin-top: 45px;
+}
+
+.el_strongBox_ttl {
+	@include f_around(36 , 48 , 600 , false);
+	margin-top: 12px;
+}
+
+.el_strongBox_subttl {
+	@include f_around(27 , 35 , false , false);
+	margin-top: 15px;
+}
+
+#plan {
+	.bl_strongBox {
+		padding-bottom: 54px;
+		width: 548px;
+		&:first-of-type {
+			position: relative;
+		}
+		&:last-of-type {
+			align-self: flex-start;
+		}
+	}
+
+
+	.un_plan_recommend {
+		left: -125px;
+		position: absolute;
+		top: -105px;
+	}
+
+	.el_strongBox_ttlblock {
+		background-color: $accent_color;
+		flex-direction: column;
+		flex-shrink: 0;
+		height: 130px;
+	}
+
+	.bl_strongBox_mainBlock {
+		border-bottom: 2px dashed $accent_color;
+		flex-direction: column;
+		padding: 0 20px;
+	}
+
+	.el_strongBox_mainImg {
+		margin-top: 14px;
+		&:first-of-type {
+			position: relative;
+		}
+	}
+
+
+	.bl_strongBox_mainText {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		margin-top: 38px;
+	}
+
+	.bl_strongBox_mainPrice {
+		@include f_around(27 , 35 , 700 , false);
+	}
+
+	.bl_strongBox_mainValue {
+		@include f_around(60 , 79 , 700 , false);
+	}
+
+	.bl_strongBox_mainList {
+		margin-top: 25px;
+		padding-bottom: 40px;
+
+		.bl_strongBox_mainItem {
+			display: flex;
+		}
+		.bl_strongBox_mainItem::before {
+			content: url(../../../public/assets/img/symbol/plan/check.svg);
+			margin-right: 6px;
+			margin-top: 5px;
+		}
+	}
+
+	.bl_strongBox_innerBlock {
+		border: 4px solid $accent_color;
+		margin: 0 auto;
+		padding-bottom: 18px;
+		padding-left: 50px;
+		padding-top: 30px;
+		position: relative;
+		width: 100%;
+
+		&:nth-of-type(1) {
+			color: $accent_color;
+			margin-top: 60px;
+		}
+		&:nth-of-type(3) {
+			border: 4px solid $support_color;
+			color: $support_color;
+			margin-top: 30px;
+			padding-right: 20px;
+		}
+
+		.el_strongBox_subAbout {
+			background-color: $sub_color;
+			@include f_around(27 , 43 , 700 , false);
+			left: 50%;
+			position: absolute;
+			top: -22px;
+			transform: translateX(-50%);
+		}
+	}
+
+	.bl_strongBox_subBlock {
+		padding: 0 43px;
+	}
+
+	.el_strongBox_subtext {
+		@include f_around(15 , 22.5 , 500 , false);
+	}
+
+	.el_strongBox_subAddition {
+		margin-top: 45px;
+		text-align: center;
+	}
+	// テキスト画像
+	.un_plan_set {
+		position: absolute;
+		right: -48px;
+		top: -12px;
+	}
+	// アイコン
+	.el_strongBox_crossIcon {
+		margin-top: 18px;
+		text-align: center;
+	}
 }
