@@ -87,20 +87,6 @@ a:hover {
   position: relative;
 }
 
-.ly_plan_treeFirst, .ly_plan_treeSecond {
-  position: absolute;
-}
-
-.ly_plan_treeFirst {
-  left: 175px;
-  top: 55px;
-}
-
-.ly_plan_treeSecond {
-  right: 150px;
-  top: 50px;
-}
-
 .ly_activety_titleWrap {
   margin: 0 auto;
   max-width: 1210px;
@@ -131,6 +117,10 @@ a:hover {
   top: 75px;
 }
 
+.ly_faq_inner {
+  position: relative;
+}
+
 /* 共通モジュールのスタイル */
 /************************************************/
 .el_section_title {
@@ -147,6 +137,20 @@ a:hover {
   font-weight: 700;
   line-height: 1;
   text-transform: capitalize;
+}
+
+.el_title_treeFirst, .el_title_treeSecond {
+  position: absolute;
+}
+
+.el_title_treeFirst {
+  left: 175px;
+  top: 55px;
+}
+
+.el_title_treeSecond {
+  right: 150px;
+  top: 50px;
 }
 
 .el_section_concept {
@@ -219,6 +223,14 @@ a:hover {
   padding-top: 68px;
 }
 
+.el_section_faq {
+  padding-top: 95px;
+}
+
+.el_section_contact {
+  padding-top: 80px;
+}
+
 .el_nav_link {
   cursor: pointer;
   display: block;
@@ -262,9 +274,33 @@ a:hover {
 }
 
 /* bl_accordion */
+.bl_accordion_block {
+  color: #fff;
+  margin: 95px auto 0;
+  max-width: 1227px;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 1439px) {
+  .bl_accordion_block {
+    padding: 0 20px 80px;
+  }
+}
+
+.bl_accordion_menu {
+  background: #406150;
+  border-radius: 10px;
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding: .5em 1em;
+}
+
 .el_accordion_btn {
   display: flex;
   position: relative;
+  text-align: left;
+  width: 100%;
 }
 
 .el_accordion_btn::before {
@@ -272,8 +308,9 @@ a:hover {
 }
 
 .el_accordion_icon {
-  display: block;
-  margin-left: auto;
+  display: inline-block;
+  height: 41px;
+  width: 41px;
 }
 
 .el_accordion_icon::before {
@@ -281,19 +318,22 @@ a:hover {
   content: "";
   height: 2px;
   position: absolute;
-  right: 8px;
+  right: 7px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 24px;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  width: 41px;
 }
 
 .el_accordion_icon::after {
   background: #fff;
   content: "";
-  height: 24px;
+  height: 41px;
   position: absolute;
-  right: 20px;
+  right: 27px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -318,7 +358,10 @@ a:hover {
 
 .bl_accordion_innerMenu {
   font-weight: 400;
-  padding: 50px 0 30px;
+  font-size: 1.5625rem;
+  font-weight: 700;
+  line-height: 1.24;
+  padding: 20px 50px 30px;
 }
 
 .bl_accordion_innerMenu::before {
@@ -330,43 +373,6 @@ a:hover {
 .bl_accordion_innerMenu .el_accordion_innertext {
   display: inline-block;
   width: 90%;
-}
-
-.bl_accordion_menu:before {
-  background: #fff;
-  content: "";
-  height: 2px;
-  position: absolute;
-  right: 8px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 24px;
-}
-
-.bl_accordion_menu:after {
-  background: #fff;
-  content: "";
-  height: 24px;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  transition: all .3s;
-  width: 2px;
-}
-
-/* 縦線（after）だけ縦回転させる */
-.bl_accordion_menu.open:after {
-  opacity: 0;
-  top: 25%;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.el_accordion_btn {
-  width: 100%;
 }
 
 .ly_header {
@@ -823,6 +829,30 @@ a:hover {
   right: -15px;
 }
 
+#contact .el_accent_head {
+  height: 82px;
+  font-size: 2.1875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  line-height: 82px;
+  margin-top: 60px;
+  text-align: center;
+  width: 550px;
+}
+
+@media screen and (max-width: 780px) {
+  #contact .el_accent_head {
+    width: 90%;
+  }
+}
+
+#contact .el_accent_wrap {
+  margin: 0 auto;
+  max-width: 1120px;
+  position: relative;
+  text-align: center;
+}
+
 .bl_overlay {
   background-color: rgba(0, 0, 0, 0.7);
   display: none;
@@ -916,12 +946,12 @@ a:hover {
 .bl_list_container {
   margin: 0 auto;
   max-width: 1160px;
-  padding-bottom: 65px;
+  padding-bottom: 90px;
 }
 
 @media screen and (max-width: 1439px) {
   .bl_list_container {
-    padding: 0 20px;
+    padding: 0 20px 65px;
   }
 }
 
@@ -962,6 +992,86 @@ a:hover {
 
 .el_list_flex {
   display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 780px) {
+  .el_list_flex {
+    flex-direction: column;
+  }
+}
+
+.el_list_flexImg {
+  margin-left: 20px;
+  margin-top: -30px;
+}
+
+@media screen and (max-width: 780px) {
+  .el_list_flexImg {
+    margin-top: 20px;
+  }
+}
+
+.el_list_flextext {
+  flex-basis: 42%;
+  flex-shrink: 0;
+}
+
+.bl_form {
+  margin: 0 auto;
+  max-width: 930px;
+  padding: 62px 0 100px;
+}
+
+.bl_form_block {
+  align-items: center;
+  display: flex;
+}
+
+.bl_form_block:not(:first-of-type) {
+  margin-top: 40px;
+}
+
+.bl_form_block:nth-of-type(5) {
+  align-items: flex-start;
+  margin-top: 53px;
+}
+
+.bl_form_block:first-of-type {
+  position: relative;
+}
+
+.bl_form_block:first-of-type::after {
+  content: "▼";
+  position: absolute;
+  right: .8em;
+  top: .4em;
+}
+
+.el_form_label {
+  flex-basis: 180px;
+  flex-shrink: 0;
+  font-size: 1.3125rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.el_form_label::after {
+  color: #f00;
+  content: "*";
+}
+
+.el_form_area {
+  background-color: #e6ebe0;
+  border: 0;
+  border-radius: 4px;
+  margin-left: 46px;
+  padding: .5em 0;
+  width: 100%;
+}
+
+.el_form_textarea {
+  height: 131px;
 }
 
 /* セクション独自のスタイル */
@@ -1296,6 +1406,22 @@ a:hover {
 
 .un_activety_descriptionLink img {
   padding-left: .5em;
+}
+
+/* activety */
+.un_section_read {
+  color: #406150;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.un_contact_link {
+  color: #406150;
+  display: inline-block;
+  text-decoration: underline;
 }
 
 /* helperスタイル */

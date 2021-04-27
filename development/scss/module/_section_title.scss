@@ -13,6 +13,18 @@
 	}
 }
 
+.el_title_treeFirst , .el_title_treeSecond {
+	position: absolute;
+}
+.el_title_treeFirst {
+	left: 175px;
+	top: 55px;
+}
+.el_title_treeSecond {
+	right: 150px;
+	top: 50px;
+}
+
 .el_section_concept {
 	padding-top: 80px;
 }
@@ -76,4 +88,14 @@
 // information
 .el_section_information {
 	padding-top: 68px;
+}
+
+// faq
+.el_section_faq {
+	padding-top: 95px;
+}
+
+// contact
+.el_section_contact {
+	padding-top: 80px;
 }

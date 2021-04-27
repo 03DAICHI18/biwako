@@ -114,3 +114,23 @@
 		right: -15px;
 	}
 }
+
+#contact {
+	.el_accent_head {
+		height: 82px;
+		@include f_around(35 , 52.5 , 700 , false);
+		@include maxmq(tab) {
+			width: 90%;
+		}
+		line-height: 82px;
+		margin-top: 60px;
+		text-align: center;
+		width: 550px;
+	}
+	.el_accent_wrap {
+		margin: 0 auto;
+		max-width: 1120px;
+		position: relative;
+		text-align: center;
+	}
+}

@@ -52,17 +52,6 @@
 	padding-bottom: 50px;
 	position: relative;
 }
-.ly_plan_treeFirst , .ly_plan_treeSecond {
-	position: absolute;
-}
-.ly_plan_treeFirst {
-	left: 175px;
-	top: 55px;
-}
-.ly_plan_treeSecond {
-	right: 150px;
-	top: 50px;
-}
 
 // activety
 .ly_activety_titleWrap {
@@ -93,4 +82,9 @@
 .ly_activety_treeSecond {
 	right: 10px;
 	top: 75px;
+}
+
+// faq
+.ly_faq_inner {
+	position: relative;
 }

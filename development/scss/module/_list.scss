@@ -1,10 +1,10 @@
 .bl_list_container {
 	@include maxmq(full) {
-		padding: 0 20px;
+		padding: 0 20px 65px;
 	}
 	margin: 0 auto;
 	max-width: 1160px;
-	padding-bottom: 65px;
+	padding-bottom: 90px;
 
 	.el_list_term {
 		padding: 0 3em;
@@ -43,4 +43,21 @@
 
 .el_list_flex {
 	display: flex;
+	@include maxmq(tab) {
+		flex-direction: column;
+	}
+	justify-content: space-between;
+}
+
+.el_list_flexImg {
+	@include maxmq(tab) {
+		margin-top: 20px;
+	}
+	margin-left: 20px;
+	margin-top: -30px;
+}
+
+.el_list_flextext {
+	flex-basis: 42%;
+	flex-shrink: 0;
 }

@@ -278,7 +278,6 @@ caption {
 	color: inherit;
 	padding-bottom: .5rem;
 	padding-top: .5rem;
-	text-align: left;
 }
 
 th {
@@ -322,7 +321,6 @@ button , input , select , textarea {
 	color: inherit;
 	font: inherit;
 	letter-spacing: inherit;
-	padding: .25em .375em;
 }
 
 button , select {
