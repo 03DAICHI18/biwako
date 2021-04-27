@@ -37,18 +37,19 @@ table {
 	line-height: 66px;
 	text-align: center;
 
-	&:first-of-type {
-		width: 76px;
-	}
-	&:nth-of-type(2) {
-		width: 610px;
-	}
-	&:nth-of-type(3) {
-		width: calc(920px - 76px - 610px);
-	}
 	&:not(:first-of-type) {
 		border-left: 4px solid $sub_color;
 	}
+}
+
+.el_tableHead_check {
+	width: 76px;
+}
+.el_tableHead_type {
+	width: 610px;
+}
+.el_tableHead_price {
+	width: calc(920px - 76px - 610px);
 }
 
 .el_table_check {

@@ -20,6 +20,11 @@
 		width: 730px;
 	}
 
+	.el_underPage_btn {
+		background-color: $accentSub_color;
+		margin-top: 20px;
+	}
+
 	.el_underPage_back {
 		background-color: $sub_color;
 		border: 4px solid $accent_color;
@@ -90,12 +95,37 @@
 
 .bl_underPage_textWrap {
 	color: $accent_color;
-	@include f_around(20 , 27 , 400 ,false);
+	@include f_around(20 , 27 , 700 ,false);
 	margin-top: 50px;
 	text-align: center;
 }
 
-.bl_underPage_mainWrap {
+.bl_underPage_rentalWrap {
 	margin: 50px auto 0;
 	max-width: 920px;
+}
+.bl_underPage_planWrap {
+	margin: 50px auto 0;
+	max-width: 850px;
+}
+
+.el_underPage_text {
+	color: $accentSub_color;
+	@include f_around(20 , 27 , 700 ,false);
+	margin-top: 40px;
+	text-align: center;
+}
+
+.el_underPage_attentionWrap {
+	color: #e51616;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.el_underPage_attention {
+	@include f_around(27 , 36.5 , 700 , false);
+}
+.el_underPage_attentionList {
+	font-weight: 700;
+	margin-top: 20px;
 }

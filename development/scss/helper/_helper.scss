@@ -53,7 +53,7 @@ $space_endValue: 15 !default;
 	font-weight: 700;
 }
 
-.hp_ccentSub_color {
+.hp_acentSub_color {
 	color: $accentSub_color;
 }
 
@@ -71,4 +71,9 @@ $space_endValue: 15 !default;
 }
 .hp_bg_accentColor {
 	background-color: $accent_color;
+}
+
+.hp_w850 {
+	margin: 50px auto 0;
+	max-width: 850px;
 }
