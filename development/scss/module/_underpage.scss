@@ -15,7 +15,7 @@
 			width: 90%;
 		}
 		line-height: 82px;
-		margin: 0 auto;
+		margin: 100px auto 0;
 		text-align: center;
 		width: 730px;
 	}
@@ -85,4 +85,17 @@
 	margin-top: 44px;
 	max-width: 1040px;
 	text-align: center;
+}
+
+
+.bl_underPage_textWrap {
+	color: $accent_color;
+	@include f_around(20 , 27 , 400 ,false);
+	margin-top: 50px;
+	text-align: center;
+}
+
+.bl_underPage_mainWrap {
+	margin: 50px auto 0;
+	max-width: 920px;
 }

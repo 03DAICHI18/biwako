@@ -45,9 +45,7 @@
 	display: flex;
 	@include z-index(modalInnre);
 	justify-content: space-between;
-	padding: 70px 30px 40px 50px;
-	// position: absolute;
-	// top: 0;
+	padding: 70px 60px 40px 50px;
 }
 
 .bl_modal_text {
