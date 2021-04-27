@@ -18,8 +18,17 @@
 		}
 		line-height: 82px;
 		margin: 100px auto 0;
+		overflow: hidden;
 		text-align: center;
+		transition: background-color .2s;
 		width: 730px;
+		&:hover {
+			a {
+				background-color: #568932;
+				text-decoration: none;
+				transition: background-color .2s;
+			}
+		}
 	}
 
 	.el_underPage_btn {
@@ -39,11 +48,13 @@
 		}
 		line-height: 74px;
 		margin: 30px auto 100px;
+		transition: background-color .2s;
 		width: 492px;
 		a {
 			color: $accent_color;
 		}
 	}
+
 
 	.bl_strongBox_innerBlock {
 		align-self: flex-start;
@@ -63,6 +74,16 @@
 		}
 	}
 }
+
+.bl_underPage_container .el_underPage_back:hover {
+	background-color: #406150;
+	cursor: pointer;
+	a {
+		background-color: #406150;
+		color: #fff;
+	}
+}
+
 
 .bl_underPage_blockWrap {
 	display: flex;

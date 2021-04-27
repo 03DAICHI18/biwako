@@ -41,25 +41,31 @@
 	}
 }
 
+.el_list_wrap {
+	align-items: flex-end;
+	display: flex;
+
+	.el_list_term {
+		margin-right: 3em;
+	}
+}
+
 .el_list_flex {
 	display: flex;
-	@include maxmq(tab) {
-		flex-direction: column;
-	}
-	justify-content: space-between;
+	flex-direction: column;
 }
 
 .el_list_flexImg {
+	height: 395px;
 	@include maxmq(tab) {
 		margin-top: 20px;
 	}
-	margin-left: 20px;
-	margin-top: -30px;
+	margin: 40px auto 0;
+	width: 405px;
 }
 
 .el_list_flextext {
-	flex-basis: 42%;
-	flex-shrink: 0;
+	padding-bottom: .2em;
 }
 
 .el_white-space {
