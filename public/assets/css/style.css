@@ -643,8 +643,20 @@ a:hover {
   margin-top: 5px;
 }
 
-#plan .bl_strongBox_innerBlock {
+#plan .un_plan_set {
+  position: absolute;
+  right: -48px;
+  top: -12px;
+}
+
+#plan .el_strongBox_crossIcon {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.bl_strongBox_innerBlock {
   border: 4px solid #406150;
+  font-weight: 700;
   margin: 0 auto;
   padding: 30px 0 18px 50px;
   position: relative;
@@ -652,24 +664,24 @@ a:hover {
 }
 
 @media screen and (max-width: 1439px) {
-  #plan .bl_strongBox_innerBlock {
+  .bl_strongBox_innerBlock {
     padding: 20px 0 20px 20px;
   }
 }
 
-#plan .bl_strongBox_innerBlock:nth-of-type(1) {
+.bl_strongBox_innerBlock:nth-of-type(1) {
   color: #406150;
   margin-top: 60px;
 }
 
-#plan .bl_strongBox_innerBlock:nth-of-type(3) {
+.bl_strongBox_innerBlock:nth-of-type(3) {
   border: 4px solid #c5d02c;
   color: #c5d02c;
   margin-top: 30px;
   padding-right: 20px;
 }
 
-#plan .bl_strongBox_innerBlock .el_strongBox_subAbout {
+.bl_strongBox_innerBlock .el_strongBox_subAbout {
   background-color: #fff;
   font-size: 1.6875rem;
   font-weight: 700;
@@ -681,35 +693,24 @@ a:hover {
           transform: translateX(-50%);
 }
 
-#plan .bl_strongBox_subBlock {
+.bl_strongBox_subBlock {
   padding: 0 43px;
 }
 
 @media screen and (max-width: 1439px) {
-  #plan .bl_strongBox_subBlock {
+  .bl_strongBox_subBlock {
     padding: 0 30px;
   }
 }
 
-#plan .el_strongBox_subtext {
+.el_strongBox_subtext {
   font-size: 0.9375rem;
   font-weight: 500;
   line-height: 1.5;
 }
 
-#plan .el_strongBox_subAddition {
+.el_strongBox_subAddition {
   margin-top: 45px;
-  text-align: center;
-}
-
-#plan .un_plan_set {
-  position: absolute;
-  right: -48px;
-  top: -12px;
-}
-
-#plan .el_strongBox_crossIcon {
-  margin-top: 18px;
   text-align: center;
 }
 
@@ -1231,6 +1232,33 @@ a:hover {
 
 .bl_underPage_container .el_underPage_back a {
   color: #406150;
+}
+
+.bl_underPage_container .bl_strongBox_innerBlock {
+  align-self: flex-start;
+  margin-top: 0;
+  width: 455px;
+}
+
+.bl_underPage_container .bl_strongBox_innerBlock:nth-of-type(1) {
+  border-color: #061e74;
+  color: #061e74;
+}
+
+.bl_underPage_container .bl_strongBox_innerBlock:nth-of-type(2) {
+  border-color: #e51616;
+  color: #e51616;
+}
+
+.bl_underPage_container .bl_strongBox_innerBlock:nth-of-type(2) .el_strongBox_subAbout {
+  text-align: center;
+  width: 70%;
+}
+
+.bl_underPage_blockWrap {
+  display: flex;
+  margin: 60px auto 0;
+  max-width: 955px;
 }
 
 .bl_underPage_title {

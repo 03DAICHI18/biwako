@@ -37,6 +37,30 @@
 			color: $accent_color;
 		}
 	}
+
+	.bl_strongBox_innerBlock {
+		align-self: flex-start;
+		margin-top: 0;
+		width: 455px;
+		&:nth-of-type(1) {
+			border-color: $under_commonColor;
+			color: $under_commonColor;
+		}
+		&:nth-of-type(2) {
+			border-color: $under_selfColor;
+			color: $under_selfColor;
+			.el_strongBox_subAbout {
+				text-align: center;
+				width: 70%;
+			}
+		}
+	}
+}
+
+.bl_underPage_blockWrap {
+	display: flex;
+	margin: 60px auto 0;
+	max-width: 955px;
 }
 
 
