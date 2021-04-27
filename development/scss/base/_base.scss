@@ -17,6 +17,9 @@ img {
 
 a {
 	display: block;
+	img {
+		cursor: inherit;
+	}
 }
 
 a:hover {

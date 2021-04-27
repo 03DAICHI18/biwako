@@ -185,14 +185,12 @@ a {
 	text-decoration: none;
 }
 a:hover {
-	color: #3434e0;
 	text-decoration: underline;
 }
 a:focus {
 	outline: thin dotted;
 }
 a:not([href]):not(class) , a:not([href]):not([class]):hover {
-	color: inherit;
 	cursor: default;
 	text-decoration: none;
 }

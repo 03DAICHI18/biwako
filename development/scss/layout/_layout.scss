@@ -88,3 +88,12 @@
 .ly_faq_inner {
 	position: relative;
 }
+
+// footer
+.ly_footer_wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1211px;
+	padding: 51px 0;
+}

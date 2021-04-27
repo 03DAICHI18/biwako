@@ -8,7 +8,7 @@
 	}
 	left: 51%;
 	position: absolute;
-	top: 12vw;
+	top: 11vw;
 	transform: translateX(-50%);
 }
 
@@ -16,7 +16,7 @@
 	@include maxmq(tab) {
 		width: 80%;
 	}
-	width: 750px;
+	width: 685px;
 	img {
 		width: 100%;
 	}
