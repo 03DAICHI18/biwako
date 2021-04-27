@@ -2,9 +2,13 @@
 /************************************************/
 /* fv */
 .un_fv_container {
+	@include maxmq(full) {
+		top: 40%;
+		transform: translate(-50% , -50%);
+	}
 	left: 51%;
 	position: absolute;
-	top: 15.5%;
+	top: 12vw;
 	transform: translateX(-50%);
 }
 
@@ -12,7 +16,7 @@
 	@include maxmq(tab) {
 		width: 80%;
 	}
-	width: 680px;
+	width: 750px;
 	img {
 		width: 100%;
 	}

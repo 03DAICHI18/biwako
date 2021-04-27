@@ -21,4 +21,19 @@ $(function () {
     $(this).parent().next().slideDown(300);
     $('.bl_accordion_menu').not($(this).parent()).next().slideUp();
   });
+
+  // モーダル
+  $('.js_modalOpen').click(function () {
+    $("body").addClass("is_noScroll"); // 背景固定させるクラス付与
+
+    var id = $(this).data('id'); // 何番目のキャプション（モーダルウィンドウ）か認識
+    $('.js_overlay , .is_open_modal[data-id="modal' + id + '"]').fadeIn();
+  });
+
+  // オーバーレイクリックでもモーダルを閉じるように
+  $('.js_close , js_overlay').click(function () {
+    $("body").removeClass("is_noScroll"); // 背景固定させるクラス削除
+
+    $('js_overlay, .is_open_modal').fadeOut();
+  });
 });

@@ -38,7 +38,7 @@ a:hover {
   padding-bottom: calc(812.5 / 1440 *100%);
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1439px) {
   .ly_fv {
     height: 812.5px;
   }
@@ -760,19 +760,82 @@ a:hover {
   right: -15px;
 }
 
+.bl_overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  height: 100%;
+  z-index: 100;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.bl_modal_window {
+  background-image: url(../../../public/assets/img/photo/modal/modal_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  display: none;
+  z-index: 1000;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 872px;
+}
+
+@media screen and (max-width: 1025px) {
+  .bl_modal_window {
+    width: 90%;
+  }
+}
+
+.bl_modal_text {
+  color: #fff;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  width: 495px;
+}
+
+@media screen and (max-width: 1025px) {
+  .bl_modal_text {
+    width: 55%;
+  }
+}
+
+.el_modal_textWrap {
+  margin-top: 1.5em;
+}
+
+.el_button_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 /* セクション独自のスタイル */
 /************************************************/
 /* fv */
 .un_fv_container {
   left: 51%;
   position: absolute;
-  top: 15.5%;
+  top: 12vw;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
+@media screen and (max-width: 1439px) {
+  .un_fv_container {
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
 .un_fv_copy {
-  width: 680px;
+  width: 750px;
 }
 
 @media screen and (max-width: 780px) {
@@ -1246,3 +1309,6 @@ a:hover {
 
 /* js対応スタイル */
 /************************************************/
+.is_noScroll {
+  overflow: hidden;
+}

@@ -1,0 +1,46 @@
+.bl_overlay {
+	background-color: rgba(0, 0, 0, .7);
+	display: none;
+	height: 100%;
+	@include z-index(overlay);
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.bl_modal_window {
+	background-image: url(../../../public/assets/img/photo/modal/modal_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	display: none;
+	@include z-index(modal);
+	@include maxmq(pc) {
+		width: 90%;
+	}
+	left: 50%;
+	position: fixed;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 872px;
+}
+
+.bl_modal_text {
+	color: $sub_color;
+	@include f_around(15 , 22.5 ,false ,false);
+	@include maxmq(pc) {
+		width: 55%;
+	}
+	width: 495px;
+}
+
+.el_modal_textWrap {
+	margin-top: 1.5em;
+}
+
+.el_button_close {
+	position: absolute;
+	right: 0;
+	top: 0;
+}

@@ -10,7 +10,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 0;
-	@include maxmq(pc) {
+	@include maxmq(full) {
 		height: 812.5px;
 	}
 	padding-bottom: calc(812.5 / 1440 *100%);
