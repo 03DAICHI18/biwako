@@ -1,0 +1,40 @@
+.bl_underPage_container {
+	.el_accent_head {
+		display: block;
+		height: 82px;
+		@include f_around(35 , 52.5 , 700 , false);
+		@include maxmq(tab) {
+			width: 90%;
+		}
+		line-height: 82px;
+		margin: 0 auto;
+		text-align: center;
+		width: 730px;
+	}
+
+	.el_underPage_back {
+		background-color: $sub_color;
+		border: 4px solid $accent_color;
+		line-height: 74px;
+		margin: 30px auto 100px;
+		width: 492px;
+		a {
+			color: $accent_color;
+		}
+	}
+}
+
+
+.bl_underPage_title {
+	color: $accent_color;
+	@include f_around(45 ,67.5 , 700 , false);
+	margin-top: 143px;
+	text-align: center;
+}
+
+.bl_underPage_read {
+	color: $accent_color;
+	@include f_around(20 , 27 , 700 , false);
+	margin-top: 44px;
+	text-align: center;
+}
