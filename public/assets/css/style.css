@@ -1100,6 +1100,10 @@ a:hover {
   height: 131px;
 }
 
+.el_form_btn:hover {
+  cursor: pointer;
+}
+
 .bl_footer_list {
   display: flex;
   flex-basis: 625px;
