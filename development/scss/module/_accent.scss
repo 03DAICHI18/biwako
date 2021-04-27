@@ -17,7 +17,15 @@
 	.el_accent_head {
 		height: 82px;
 		@include f_around(35 , 52.5 , 700 , false);
+		@include maxmq(pc) {
+			font-size: rem(27);
+			height: 60px;
+			line-height: 60px;
+		}
 		@include maxmq(tab) {
+			font-size: rem(19);
+			height: 50px;
+			line-height: 50px;
 			width: 90%;
 		}
 		line-height: 82px;
@@ -61,25 +69,25 @@
 			height: 65px;
 			@include f_around(27 , 40.5 , 700 , false);
 			line-height: 65px;
-			margin-top: 50px;
 			position: relative;
 			width: 100%;
 		}
 	}
 
 	// PC時右側
-	.bl_strongBox:nth-of-type(2) .el_accent_head {
+	.el_strongBox_btnWrap {
 		margin-top: 75px;
 	}
 
-	.bl_strongBox:nth-of-type(2) .el_accent_head::before {
+	.el_accent_attention {
 		color: $accentSub_color;
-		content: "＼そんな方は、こちらをチェック／";
 		display: block;
-		font-size: rem(25);
-		left: 1.5em;
-		position: absolute;
-		top: -55px;
+		@include f_around(26 , false ,700 ,false);
+		margin-bottom: .5em;
+		text-align: center;
+		@media screen and (max-width: 1330px) {
+			font-size: rem(20);
+		}
 	}
 }
 
@@ -87,7 +95,15 @@
 	.el_accent_head {
 		height: 82px;
 		@include f_around(35 , 52.5 , 700 , false);
+		@include maxmq(pc) {
+			font-size: rem(27);
+			height: 60px;
+			line-height: 60px;
+		}
 		@include maxmq(tab) {
+			font-size: rem(19);
+			height: 50px;
+			line-height: 50px;
 			width: 90%;
 		}
 		line-height: 82px;
@@ -119,7 +135,15 @@
 	.el_accent_head {
 		height: 82px;
 		@include f_around(35 , 52.5 , 700 , false);
+		@include maxmq(pc) {
+			font-size: rem(27);
+			height: 60px;
+			line-height: 60px;
+		}
 		@include maxmq(tab) {
+			font-size: rem(19);
+			height: 50px;
+			line-height: 50px;
 			width: 90%;
 		}
 		line-height: 82px;
