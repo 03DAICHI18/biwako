@@ -24,6 +24,16 @@ $space_endValue: 15 !default;
 	}
 }
 
+.hp_mt1-4em {
+	margin-top: 1.4em;
+}
+.hp_mt1-5em {
+	margin-top: 1.5em;
+}
+.hp_mt2em {
+	margin-top: 1.5em;
+}
+
 // 背景色
 .hp_Bg {
 	background-color: $accentSub_color;
@@ -36,6 +46,15 @@ $space_endValue: 15 !default;
 // テキストカラー
 .hp_textw {
 	color: $sub_color;
+}
+
+.hp_strong {
+	color: #d32020;
+	font-weight: 700;
+}
+
+.hp_ccentSub_color {
+	color: $accentSub_color;
 }
 
 // flex_column

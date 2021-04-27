@@ -7,7 +7,6 @@
 	@include f_around(20 , 30 , false , false);
 	line-height: 38px;
 	text-align: center;
-
 	a {
 		color: $sub_color;
 	}
@@ -18,6 +17,9 @@
 	.el_accent_head {
 		height: 82px;
 		@include f_around(35 , 52.5 , 700 , false);
+		@include maxmq(tab) {
+			width: 90%;
+		}
 		line-height: 82px;
 		text-align: center;
 		width: 730px;
@@ -85,6 +87,9 @@
 	.el_accent_head {
 		height: 82px;
 		@include f_around(35 , 52.5 , 700 , false);
+		@include maxmq(tab) {
+			width: 90%;
+		}
 		line-height: 82px;
 		margin: 75px 0 ;
 		text-align: center;

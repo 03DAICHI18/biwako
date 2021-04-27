@@ -32,6 +32,11 @@
 
 // service
 #service {
+	.bl_strongBox_container {
+		@include maxmq(full) {
+			padding: 0 20px;
+		}
+	}
 	.bl_strongBox {
 		border: 5px solid $accent_color;
 		height: 126px;
@@ -65,11 +70,17 @@
 // planのみ
 .bl_strongContainer {
 	display: flex;
+	@include maxmq(full) {
+		justify-content: center;
+	}
 	justify-content: space-between;
 	margin-top: 45px;
 }
 
 .el_strongBox_ttl {
+	@include maxmq(pc) {
+		@include f_around(28 , 40 , 600 , false);
+	}
 	@include f_around(36 , 48 , 600 , false);
 	margin-top: 12px;
 }
@@ -81,9 +92,15 @@
 
 #plan {
 	.bl_strongBox {
+		@include maxmq(full) {
+			width: 40vw;
+		}
 		padding-bottom: 54px;
 		width: 548px;
 		&:first-of-type {
+			@include maxmq(full) {
+				margin-right: 20px;
+			}
 			position: relative;
 		}
 		&:last-of-type {
@@ -93,6 +110,9 @@
 
 
 	.un_plan_recommend {
+		@include maxmq(full) {
+			left: -100px;
+		}
 		left: -125px;
 		position: absolute;
 		top: -105px;
@@ -101,7 +121,6 @@
 	.el_strongBox_ttlblock {
 		background-color: $accent_color;
 		flex-direction: column;
-		flex-shrink: 0;
 		height: 130px;
 	}
 
@@ -150,10 +169,11 @@
 
 	.bl_strongBox_innerBlock {
 		border: 4px solid $accent_color;
+		@include maxmq(full) {
+			padding: 20px 0 20px 20px;
+		}
 		margin: 0 auto;
-		padding-bottom: 18px;
-		padding-left: 50px;
-		padding-top: 30px;
+		padding: 30px 0 18px 50px;
 		position: relative;
 		width: 100%;
 
@@ -179,6 +199,9 @@
 	}
 
 	.bl_strongBox_subBlock {
+		@include maxmq(full) {
+			padding: 0 30px;
+		}
 		padding: 0 43px;
 	}
 

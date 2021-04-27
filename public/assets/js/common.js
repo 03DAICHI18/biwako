@@ -31,9 +31,9 @@ $(function () {
   });
 
   // オーバーレイクリックでもモーダルを閉じるように
-  $('.js_close , js_overlay').click(function () {
+  $('.js_close , .js_overlay').click(function () {
     $("body").removeClass("is_noScroll"); // 背景固定させるクラス削除
 
-    $('js_overlay, .is_open_modal').fadeOut();
+    $('.js_overlay, .is_open_modal').fadeOut();
   });
 });

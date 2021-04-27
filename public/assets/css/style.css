@@ -215,6 +215,10 @@ a:hover {
   padding-top: 80px;
 }
 
+.el_section_information {
+  padding-top: 68px;
+}
+
 .el_nav_link {
   cursor: pointer;
   display: block;
@@ -456,6 +460,12 @@ a:hover {
   font-weight: 600;
 }
 
+@media screen and (max-width: 1439px) {
+  #service .bl_strongBox_container {
+    padding: 0 20px;
+  }
+}
+
 #service .bl_strongBox {
   border: 5px solid #406150;
   height: 126px;
@@ -495,11 +505,25 @@ a:hover {
   margin-top: 45px;
 }
 
+@media screen and (max-width: 1439px) {
+  .bl_strongContainer {
+    justify-content: center;
+  }
+}
+
 .el_strongBox_ttl {
   font-size: 2.25rem;
   font-weight: 600;
   line-height: 1.33333;
   margin-top: 12px;
+}
+
+@media screen and (max-width: 1025px) {
+  .el_strongBox_ttl {
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1.42857;
+  }
 }
 
 .el_strongBox_subttl {
@@ -513,8 +537,20 @@ a:hover {
   width: 548px;
 }
 
+@media screen and (max-width: 1439px) {
+  #plan .bl_strongBox {
+    width: 40vw;
+  }
+}
+
 #plan .bl_strongBox:first-of-type {
   position: relative;
+}
+
+@media screen and (max-width: 1439px) {
+  #plan .bl_strongBox:first-of-type {
+    margin-right: 20px;
+  }
 }
 
 #plan .bl_strongBox:last-of-type {
@@ -527,10 +563,15 @@ a:hover {
   top: -105px;
 }
 
+@media screen and (max-width: 1439px) {
+  #plan .un_plan_recommend {
+    left: -100px;
+  }
+}
+
 #plan .el_strongBox_ttlblock {
   background-color: #406150;
   flex-direction: column;
-  flex-shrink: 0;
   height: 130px;
 }
 
@@ -585,11 +626,15 @@ a:hover {
 #plan .bl_strongBox_innerBlock {
   border: 4px solid #406150;
   margin: 0 auto;
-  padding-bottom: 18px;
-  padding-left: 50px;
-  padding-top: 30px;
+  padding: 30px 0 18px 50px;
   position: relative;
   width: 100%;
+}
+
+@media screen and (max-width: 1439px) {
+  #plan .bl_strongBox_innerBlock {
+    padding: 20px 0 20px 20px;
+  }
 }
 
 #plan .bl_strongBox_innerBlock:nth-of-type(1) {
@@ -618,6 +663,12 @@ a:hover {
 
 #plan .bl_strongBox_subBlock {
   padding: 0 43px;
+}
+
+@media screen and (max-width: 1439px) {
+  #plan .bl_strongBox_subBlock {
+    padding: 0 30px;
+  }
 }
 
 #plan .el_strongBox_subtext {
@@ -666,6 +717,12 @@ a:hover {
   line-height: 82px;
   text-align: center;
   width: 730px;
+}
+
+@media screen and (max-width: 780px) {
+  #plan .el_accent_head {
+    width: 90%;
+  }
 }
 
 #plan .el_accent_wrap {
@@ -740,6 +797,12 @@ a:hover {
   width: 730px;
 }
 
+@media screen and (max-width: 780px) {
+  #activety .el_accent_head {
+    width: 90%;
+  }
+}
+
 #activety .el_accent_wrap {
   margin: 0 auto;
   max-width: 1120px;
@@ -771,13 +834,17 @@ a:hover {
   width: 100%;
 }
 
+.bl_overlay:hover {
+  cursor: pointer;
+}
+
 .bl_modal_window {
   background-image: url(../../../public/assets/img/photo/modal/modal_bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
+  background-size: contain;
   display: none;
-  z-index: 1000;
+  height: 703px;
+  z-index: 200;
   left: 50%;
   position: fixed;
   top: 50%;
@@ -788,21 +855,35 @@ a:hover {
 
 @media screen and (max-width: 1025px) {
   .bl_modal_window {
+    background-size: cover;
+    height: 70vh;
     width: 90%;
   }
+}
+
+.el_modal_bg {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .el_modal_bg {
+    height: auto;
+  }
+}
+
+.bl_modal_windowInner {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 30px 40px 50px;
 }
 
 .bl_modal_text {
   color: #fff;
   font-size: 0.9375rem;
   line-height: 1.5;
-  width: 495px;
-}
-
-@media screen and (max-width: 1025px) {
-  .bl_modal_text {
-    width: 55%;
-  }
+  margin-top: 40px;
 }
 
 .el_modal_textWrap {
@@ -811,8 +892,76 @@ a:hover {
 
 .el_button_close {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 65px;
+  top: 35px;
+}
+
+.el_button_close:hover img {
+  cursor: pointer;
+}
+
+.bl_modal_innerBlock {
+  width: 60%;
+}
+
+.el_modal_tree {
+  flex-shrink: 0;
+  width: 90px;
+}
+
+.el_modal_tree img {
+  height: 100%;
+}
+
+.bl_list_container {
+  margin: 0 auto;
+  max-width: 1160px;
+  padding-bottom: 65px;
+}
+
+@media screen and (max-width: 1439px) {
+  .bl_list_container {
+    padding: 0 20px;
+  }
+}
+
+.bl_list_container .el_list_term {
+  padding: 0 3em;
+}
+
+.bl_list_block:first-of-type {
+  margin-top: 60px;
+}
+
+.bl_list_block:last-of-type {
+  margin-top: 50px;
+}
+
+.bl_list_block {
+  margin-top: 30px;
+}
+
+.el_list_description {
+  margin-top: 15px;
+}
+
+.el_list_plan:not(:first-of-type) {
+  margin-top: 1.4em;
+}
+
+.el_list_gmap {
+  height: 555px;
+  margin-top: 50px;
+  max-width: 1134px;
+}
+
+.el_list_gmap iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.el_list_flex {
+  display: flex;
 }
 
 /* セクション独自のスタイル */
@@ -1279,6 +1428,18 @@ a:hover {
   margin-bottom: 150px !important;
 }
 
+.hp_mt1-4em {
+  margin-top: 1.4em;
+}
+
+.hp_mt1-5em {
+  margin-top: 1.5em;
+}
+
+.hp_mt2em {
+  margin-top: 1.5em;
+}
+
 .hp_Bg {
   background-color: #70a24d;
 }
@@ -1289,6 +1450,15 @@ a:hover {
 
 .hp_textw {
   color: #fff;
+}
+
+.hp_strong {
+  color: #d32020;
+  font-weight: 700;
+}
+
+.hp_ccentSub_color {
+  color: #70a24d;
 }
 
 .hp_flex_column {
