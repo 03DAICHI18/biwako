@@ -1180,6 +1180,11 @@ a:hover {
   text-align: center;
 }
 
+.bl_underPage_container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
 .bl_underPage_container .el_accent_head {
   display: block;
   height: 82px;
@@ -1347,6 +1352,14 @@ a:hover {
 
 .el_underPage_attentionList {
   font-weight: 700;
+  margin-top: 20px;
+}
+
+.un_privacy_container dt {
+  margin-top: 40px;
+}
+
+.un_privacy_container dd {
   margin-top: 20px;
 }
 
@@ -1925,6 +1938,10 @@ table {
 .hp_strong {
   color: #d32020;
   font-weight: 700;
+}
+
+.hp_attention {
+  color: #d32020;
 }
 
 .hp_acentSub_color {

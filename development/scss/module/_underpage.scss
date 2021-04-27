@@ -1,4 +1,6 @@
 .bl_underPage_container {
+	margin: 0 auto;
+	max-width: 1140px;
 	.el_accent_head {
 		display: block;
 		height: 82px;
@@ -128,4 +130,13 @@
 .el_underPage_attentionList {
 	font-weight: 700;
 	margin-top: 20px;
+}
+
+.un_privacy_container {
+	dt {
+		margin-top: 40px;
+	}
+	dd {
+		margin-top: 20px;
+	}
 }
