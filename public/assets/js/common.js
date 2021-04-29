@@ -23,10 +23,10 @@ $(function () {
   $('.bl_accordion_innerMenu').css("display", "none");
   $('.js_accordion_btn').on('click', function () {
     // プラスアイコン制御
-    $(this).children().addClass('is_open');
+    $(this).children().toggleClass('is_open');
     $('.el_accordion_icon').not($(this).children()).removeClass('is_open');
     // メニューのスライド
-    $(this).parent().next().slideDown(300);
+    $(this).parent().next().slideToggle(300);
     $('.bl_accordion_menu').not($(this).parent()).next().slideUp();
   });
 

@@ -1,7 +1,6 @@
 @charset "UTF-8";
 * , *::before , *::after {
 	box-sizing: border-box;
-	scroll-behavior: smooth;
 }
 @media (prefers-reduced-motion: reduce) {
 	* , *::before , *::after {

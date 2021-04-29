@@ -41,7 +41,7 @@
 		right: 7px;
 		top: 50%;
 		transform: translateY(-50%);
-		transition: transform .2s;
+		transition: background-color .3s;
 		width: 41px;
 	}
 	&::after {
@@ -52,7 +52,7 @@
 		right: 27px;
 		top: 50%;
 		transform: translateY(-50%);
-		transition: transform .2s;
+		transition: transform .3s;
 		width: 4px;
 	}
 }
@@ -63,7 +63,6 @@
 	display: inline-block;
 	height: 14px;
 	transform: rotate(225deg);
-	transition: transform .2s;
 	width: 14px;
 }
 

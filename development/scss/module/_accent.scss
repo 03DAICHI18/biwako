@@ -181,3 +181,9 @@
 		text-align: center;
 	}
 }
+
+.el_headTree_first , .el_headTree_second {
+	@include maxmq(pc) {
+		display: none;
+	}
+}

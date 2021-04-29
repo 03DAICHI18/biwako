@@ -279,7 +279,7 @@ a:hover {
   position: relative;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1100px) {
   .bl_slide_relative {
     max-width: 1000px;
   }
@@ -338,9 +338,7 @@ a:hover {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  transition: background-color .3s;
   width: 41px;
 }
 
@@ -353,9 +351,9 @@ a:hover {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
   width: 4px;
 }
 
@@ -366,9 +364,6 @@ a:hover {
   height: 14px;
   -webkit-transform: rotate(225deg);
           transform: rotate(225deg);
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
   width: 14px;
 }
 
@@ -542,7 +537,7 @@ a:hover {
   margin-top: 12px;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1100px) {
   .el_strongBox_ttl {
     font-size: 1.75rem;
     font-weight: 600;
@@ -748,7 +743,7 @@ a:hover {
   width: 730px;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1100px) {
   #plan .el_accent_head {
     font-size: 1.6875rem;
     height: 60px;
@@ -849,7 +844,7 @@ a:hover {
   width: 730px;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1100px) {
   #activety .el_accent_head {
     font-size: 1.6875rem;
     height: 60px;
@@ -904,7 +899,7 @@ a:hover {
   width: 550px;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1100px) {
   #contact .el_accent_head {
     font-size: 1.6875rem;
     height: 60px;
@@ -931,6 +926,12 @@ a:hover {
   max-width: 1120px;
   position: relative;
   text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .el_headTree_first, .el_headTree_second {
+    display: none;
+  }
 }
 
 .bl_overlay {
@@ -963,7 +964,7 @@ a:hover {
   width: 872px;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1100px) {
   .bl_modal_window {
     background-size: cover;
     height: 70vh;
@@ -1259,7 +1260,7 @@ a:hover {
   width: 730px;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1100px) {
   .bl_underPage_container .el_accent_head {
     font-size: 1.6875rem;
     height: 60px;
@@ -1296,7 +1297,7 @@ a:hover {
   width: 492px;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1100px) {
   .bl_underPage_container .el_underPage_back {
     line-height: 52px;
   }
@@ -1362,7 +1363,7 @@ a:hover {
   text-align: center;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1100px) {
   .bl_underPage_title {
     font-size: 2.1875rem;
     font-weight: 700;
@@ -1623,7 +1624,7 @@ table {
   max-width: 1250px;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1100px) {
   .un_point_block {
     flex-direction: column;
   }
