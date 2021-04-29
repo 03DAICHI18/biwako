@@ -137,14 +137,14 @@
 
 	.el_headTree_first , .el_headTree_second {
 		position: absolute;
-		top: 0;
+		top: 20px;
 	}
 
 	.el_headTree_first {
-		left: 15px;
+		left: 0;
 	}
 	.el_headTree_second {
-		right: -15px;
+		right: 0;
 	}
 }
 
@@ -182,8 +182,19 @@
 	}
 }
 
-.el_headTree_first , .el_headTree_second {
-	@include maxmq(pc) {
+.el_headTree_sp {
+	display: none;
+}
+@include maxmq(pc) {
+	.el_headTree_first , .el_headTree_second {
 		display: none;
+	}
+	.el_headTree_sp {
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+		img {
+			width: 100%;
+		}
 	}
 }

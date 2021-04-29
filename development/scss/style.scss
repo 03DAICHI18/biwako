@@ -34,7 +34,12 @@
 @import "module/table";
 
 // unipue：使いまわされないスタイル  （un_）
-@import "unipue/unique";
+@import "unipue/un_fv";
+@import "unipue/_un_concept";
+@import "unipue/_un_service";
+@import "unipue/_un_plan";
+@import "unipue/_un_activety";
+@import "unipue/_un_contact";
 
 // helper：補助スタイル  （hp_）
 @import "helper/helper";

@@ -40,6 +40,10 @@
 	.bl_strongBox {
 		border: 5px solid $accent_color;
 		height: 126px;
+		@include maxmq(tab) {
+			flex-direction: column;
+			height: auto;
+		}
 		margin: 56px auto 0;
 		max-width: 1136px;
 	}
@@ -47,6 +51,14 @@
 		background-color: $accent_color;
 		flex-shrink: 0;
 		@include f_around(27 , false , 700 , false);
+		@include maxmq(pc) {
+			font-size: rem(22);
+			width: 15%;
+		}
+		@include maxmq(tab) {
+			height: 60px;
+			width: 100%;
+		}
 		text-align: center;
 		width: 183px;
 	}
@@ -55,13 +67,28 @@
 		border-right: 2px dashed $accent_color;
 		flex-shrink: 0;
 		@include f_around(60 , false , 700 , false);
+		@include maxmq(pc) {
+			font-size: 5.5vw;
+			width: 37%;
+		}
+		@include maxmq(tab) {
+			border-bottom: 2px dashed $accent_color;
+			border-right: 0;
+			height: 84px;
+			@include f_around(40 , 60 , 700 , false);
+			width: 100%;
+		}
 		width: 392px;
 	}
+
 	.bl_strongBox_subBlock {
 		align-items: center;
 		color: $accent_color;
 		display: flex;
 		@include f_around(20 , false , 700 , false);
+		@include maxmq(tab) {
+			padding: 20px;
+		}
 		justify-content: center;
 	}
 }
@@ -218,6 +245,9 @@
 .bl_strongBox_subBlock {
 	@include maxmq(full) {
 		padding: 0 30px;
+	}
+	@include maxmq(pc) {
+		padding: 0 15px;
 	}
 	padding: 0 43px;
 }

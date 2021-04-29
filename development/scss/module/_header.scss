@@ -29,12 +29,29 @@
 }
 
 .el_header_list:not(:first-of-type) {
+	@include maxmq(full) {
+		margin-left: 28px;
+	}
 	margin-left: 35px;
 }
+
 .el_header_list:nth-last-of-type(2) {
+	@include maxmq(full) {
+		margin-left: 25px;
+		width: 135px;
+		img {
+			width: 100%;
+		}
+	}
 	margin-left: 43px;
 }
 .el_header_list:last-of-type {
+	@include maxmq(full) {
+		width: 175px;
+		img {
+			width: 100%;
+		}
+	}
 	margin-left: 10px;
 }
 
