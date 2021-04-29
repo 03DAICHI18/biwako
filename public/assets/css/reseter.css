@@ -187,9 +187,7 @@ a {
 a:hover {
 	text-decoration: underline;
 }
-a:focus {
-	outline: thin dotted;
-}
+
 a:not([href]):not(class) , a:not([href]):not([class]):hover {
 	cursor: default;
 	text-decoration: none;

@@ -63,7 +63,7 @@
 }
 
 .un_concept_bottomBg {
-	background-image: url(../../../public/assets/img/symbol/concept/bg_green.png);
+	background-image: url(../../assets/img/symbol/concept/bg_green.png);
 	background-size: cover;
 	display: block;
 	height: 135.38px;
@@ -209,6 +209,7 @@
 }
 
 .un_point_text {
+	color: $accentSub_color;
 	margin-top: 12px;
 }
 
@@ -234,7 +235,7 @@
 /* activety */
 .un_activety_read {
 	color: $sub_color;
-	@include f_around(20 , 26 , 700 , false);
+	@include f_around(20 , 26 , 400 , false);
 	margin-top: 80px;
 	text-align: center;
 }
@@ -245,6 +246,7 @@
 
 .un_activety_textBox {
 	background-color: $sub_color;
+	color: $accent_color;
 	margin: 40px auto 0;
 	max-width: 1010px;
 	padding: 1.2em 1.2em .9em 1.2em;
@@ -252,7 +254,6 @@
 }
 
 .un_activety_strong {
-	color: $accent_color;
 	@include f_around(27 , 43 , 700 , false);
 }
 
@@ -335,7 +336,7 @@
 	}
 
 	&::after {
-		content: url(../../../public/assets/img/symbol/activety/link_btn.svg);
+		content: url(../../assets/img/symbol/activety/link_btn.svg);
 		display: inline-block;
 		height: 1em;
 		margin-left: .5em;

@@ -14,7 +14,7 @@
 }
 
 .bl_modal_window {
-	background-image: url(../../../public/assets/img/photo/modal/modal_bg.png);
+	background-image: url(../../assets/img/photo/modal/modal_bg.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	display: none;
@@ -77,5 +77,21 @@
 	width: 90px;
 	img {
 		height: 100%;
+	}
+}
+
+// カルーセルスライダークリック時
+.bl_modal_slide {
+	display: none;
+	// height: 50vh;
+	@include z-index(modal);
+	left: 50%;
+	position: fixed;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 50vw;
+
+	img {
+		width: 100%;
 	}
 }

@@ -159,9 +159,10 @@
 
 		.bl_strongBox_mainItem {
 			display: flex;
+			font-weight: 700;
 		}
 		.bl_strongBox_mainItem::before {
-			content: url(../../../public/assets/img/symbol/plan/check.svg);
+			content: url(../../assets/img/symbol/plan/check.svg);
 			margin-right: 6px;
 			margin-top: 5px;
 		}
@@ -226,6 +227,8 @@
 }
 
 .el_strongBox_subAddition {
+	color: $accent_color;
+	font-weight: 700;
 	margin-top: 45px;
 	text-align: center;
 }

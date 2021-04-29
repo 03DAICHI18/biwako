@@ -18,6 +18,11 @@
 
 .el_footer_banner {
 	flex-basis: 529px;
+	transition: opacity .2s;
+
+	&:hover {
+		opacity: .8;
+	}
 }
 
 

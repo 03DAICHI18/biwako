@@ -59,7 +59,7 @@
 	max-width: 1250px;
 
 	&::before {
-		content: url(../../../public/assets/img/symbol/service/humans.svg);
+		content: url(../../assets/img/symbol/service/humans.svg);
 		@include maxmq(full) {
 			right: 20px;
 		}
