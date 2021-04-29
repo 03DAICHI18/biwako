@@ -74,3 +74,12 @@
 	}
 	white-space: nowrap;
 }
+
+.el_list_link {
+	display: inline-block;
+	text-decoration: underline;
+}
+
+.el_list_link:hover {
+	cursor: pointer;
+}

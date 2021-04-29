@@ -1125,6 +1125,15 @@ a:hover {
   }
 }
 
+.el_list_link {
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.el_list_link:hover {
+  cursor: pointer;
+}
+
 .bl_form {
   margin: 0 auto;
   max-width: 930px;
@@ -2074,7 +2083,6 @@ table {
 .hp_acentSub_color {
   color: #70a24d;
   font-weight: 700;
-  text-decoration: underline;
 }
 
 .hp_flex_column {
